@@ -1,0 +1,1547 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "2026-10-04",
+  "title": "Пять сдвигов в AI-индустрии",
+  "analysis_date": "2026-10-04",
+  "saved_date": "2026-10-05",
+  "timezone": "Europe/Moscow",
+  "period": {
+    "start": "2026-06-01",
+    "end": "2026-10-03"
+  },
+  "basis": {
+    "summary_count": 151,
+    "legacy_issue_count": 13,
+    "summary_source_count": 11,
+    "archive_url": "https://adavydov.github.io/what-changed-archive/",
+    "legacy_archive_url": "https://adavydov.github.io/what-changed/issues/"
+  },
+  "intro": "Пять сквозных гипотез по материалам «Что изменилось». Самыми неочевидными мне кажутся первая и пятая. Это синтез пересечений между материалами; степень подтверждения у гипотез разная.",
+  "comparison_intent": "При следующем срезе через несколько месяцев оценить, какие гипотезы усилились, ослабли или изменились, опираясь на новые свидетельства и сохранённые критерии. Новую оценку сохранять отдельным датированным срезом.",
+  "trends": [
+    {
+      "id": "automation-without-model",
+      "title": "Сильный AI может создавать системы, которым потом сам больше не нужен.",
+      "short_title": "Автоматизация без модели в каждом шаге",
+      "evidence_stage": "Конкретные кейсы; отраслевое следствие — гипотеза",
+      "paragraphs": [
+        "Очень показателен кейс QuEra. Claude исследовал лазерную установку, проводил эксперименты и написал контроллер. Дальше установкой управляла **обычная проверяемая программа, без модели в рабочем цикле**. По данным компании, она восстановила систему в 695 из 700 испытаний, обычно за секунды вместо минут работы специалиста. [Оригинал QuEra](https://www.quera.com/press-releases/quera-computing-uses-ai-to-automate-a-critical-quantum-computer-subsystem-enabling-the-acceleration-of-commercial-grade-quantum-computing-deployments-from-quera).",
+        "Рядом складываются другие части той же конструкции: Siemens использует AI для поиска инженерных вариантов, сохраняя точную проверку за специализированным софтом; Replit обсуждает обучение дешёвого узкого исполнителя для повторяющейся задачи; Jev превращает модель в ограниченную программную операцию. [Siemens](https://www.mckinsey.com/industries/industrials/our-insights/siemens-next-reinvention-an-interview-with-cedrik-neike), [Replit в архиве](https://adavydov.github.io/what-changed-archive/#summary-f8da80960208), [Jev](https://www.latent.space/p/jev).",
+        "**Глубокое следствие: интеллект становится затратой на изготовление производительной системы.** Компания один раз оплачивает сложный поиск, а затем многократно использует его результат.",
+        "Отсюда развилка, которую легко пропустить: автоматизация экономики может ускоряться, а расходы на самые мощные модели — расти значительно медленнее. Часть создаваемой ценности закрепится у владельцев оборудования, процессов и программ. Технологический успех AI сам по себе ещё не определяет, кому достанется экономический выигрыш.",
+        "Граница гипотезы — повторяемость. В постоянно меняющейся среде исполнитель будет нуждаться в новом рассуждении. Самый интересный показатель здесь — сколько полезной работы выполняют созданные AI системы **без повторного обращения к сильной модели**."
+      ],
+      "watch": "Доля полезной работы, которую созданные AI программы и контроллеры выполняют без повторного обращения к сильной модели; стоимость создания и последующего исполнения.",
+      "weakening_signal": "Поддержание качества требует постоянного участия сильной модели даже в повторяемых режимах; затраты на пересборку поглощают экономию исполнения."
+    },
+    {
+      "id": "ownership-of-experience",
+      "title": "Организационный опыт становится переносимым активом — и начинается борьба за его владельца.",
+      "short_title": "Кому принадлежит опыт компании",
+      "evidence_stage": "Несколько кейсов; устойчивость преимущества ещё проверяется",
+      "paragraphs": [
+        "В архиве постоянно встречается один дефицит: компания умеет работать благодаря людям, которые помнят, почему когда-то приняли определённое решение. В базах остаётся итог, а основания живут в переписке, исключениях и головах сотрудников.",
+        "Lio показывает это на закупках: цена в ERP скрывает сотни писем, чертежи и переговоры. Lightfield строит CRM вокруг истории отношений, из которой можно восстановить сведения задним числом. Airbnb переносит опыт одной интеграции в другую через граф Everest: по рассказу CTO, первый сервис разрабатывали восемь–девять месяцев, следующий похожий — шесть недель. [Lio](https://adavydov.github.io/what-changed-archive/#summary-f50d6a3b8a3b), [Lightfield](https://adavydov.github.io/what-changed-archive/#summary-2), [Airbnb](https://www.latent.space/p/airbnb).",
+        "Мой вывод: **часть компетенции компании начинает отделяться от конкретных носителей**. Её можно сохранять после ухода эксперта, передавать новой команде и применять к следующему случаю. В экономическом смысле это превращение части расходов на работу в накапливаемый капитал.",
+        "Здесь возникает гораздо более серьёзная зависимость от поставщика, чем обычное неудобство миграции CRM. Если внешняя платформа хранит причины решений, правила исключений и проверенные способы работы, сменить её означает восстановить часть способности компании действовать. Экспорт таблиц эту проблему не решает.",
+        "Поэтому ключевой вопрос будущих внедрений: **кому принадлежит опыт, возникающий во время работы, и можно ли перенести его к другому исполнителю?**",
+        "Но накопление логов ещё не создаёт этот актив. Нужен проверенный перенос: прошлое исправление должно улучшить следующее решение. Это может происходить через контекст, правила и тесты — без самостоятельного обучения весов модели."
+      ],
+      "watch": "Качество решений после ухода экспертов, время адаптации новых команд, снижение повторных ошибок и переносимость контекста, правил и проверок между поставщиками.",
+      "weakening_signal": "Накопленная история не улучшает следующие решения; смена поставщика не требует восстановления компетенции и не ухудшает работу."
+    },
+    {
+      "id": "business-clock-speed",
+      "title": "Крупнейший эффект AI может оказаться в скорости оборота бизнеса.",
+      "short_title": "Экономика времени между решениями",
+      "evidence_stage": "Конкретные кейсы; AI и перестройка процессов действуют вместе",
+      "paragraphs": [
+        "Самая сильная цифра во всём архиве для меня — из промышленного кейса McKinsey: семь операций занимали **12–24 часа**, а переходы между ними — **9–18 дней**. В оценённой стоимости задержек зарплата выделенных координаторов составляла менее 7%; основное приходилось на оборотный капитал, незагруженные мощности и упущенную выручку. Это конкретный кейс, а не среднее по экономике. [Исследование](https://www.mckinsey.com/industries/industrials/our-insights/cutting-the-coordination-tax-how-agentic-ai-can-reshape-workflows).",
+        "Обычный взгляд на автоматизацию спрашивает, сколько часов сотрудника сэкономили. Но компания может очень быстро делать каждую операцию и всё равно медленно превращать заказ в поставку и деньги.",
+        "Агент становится экономически значимым, когда проверяет готовность следующего шага, согласует ограничения и двигает работу дальше. Тогда ускорение распространяется на весь цикл.",
+        "**Следствие: размер возможности AI часто следует считать через стоимость ожидания.** Для завода это выпуск с уже установленного оборудования. Для сервиса — меньше повторных выездов. Для закупок — возможность вовремя пересмотреть множество небольших контрактов, которые раньше не оправдывали ручного внимания.",
+        "Из этого меняется и выбор привлекательного рынка: особенно интересны процессы с дорогими активами, частыми передачами работы и высокой ценой задержки. Там небольшой объём автоматизированного суждения способен дать непропорционально большой эффект.",
+        "Проверять гипотезу нужно по сроку полного цикла, загрузке активов и обороту денег. Рост числа сгенерированных документов её не подтверждает."
+      ],
+      "watch": "Срок полного цикла, оборотный капитал, загрузка оборудования, повторные выезды и выручка при сопоставимых ресурсах.",
+      "weakening_signal": "Локальные задачи ускоряются, а очереди, полный цикл и финансовые результаты остаются прежними."
+    },
+    {
+      "id": "market-for-responsibility",
+      "title": "Появляется рынок передачи ответственности за агентную работу.",
+      "short_title": "Ответственность как продукт",
+      "evidence_stage": "Формирующийся рынок",
+      "paragraphs": [
+        "У Молли Грэм есть точное наблюдение: передать работу агенту ещё не значит освободить голову. Человек продолжает проверять, исправлять и отвечать за последствия. Дополнительные исполнители могут увеличить нагрузку на него. [Разговор с Грэм](https://adavydov.github.io/what-changed-archive/#summary-c0e32cb2cd1e).",
+        "С другой стороны подходит AIUC: компания соединяет технические испытания агентов, стандарт требований и страховое покрытие. Она пытается сделать риск достаточно определённым, чтобы покупатель мог разрешить реальное применение. [Интервью с Руне Квистом](https://www.latent.space/p/aiuc).",
+        "Вместе эти материалы дают сильную гипотезу: **дорогим продуктом станет способность действительно снять с клиента часть надзора и риска**.",
+        "Поставщик должен уметь определить границы работы, обнаружить ошибку, обработать исключение и отвечать за согласованный результат. На этой основе AI-компания может сближаться с оператором процесса: например, брать на себя определённый участок закупок или обслуживания вместе с обязательствами по качеству.",
+        "Отсюда и парадокс внедрения: рост способностей модели расширяет круг возможных действий и потенциальный ущерб. Поэтому хорошие результаты на тестах могут расти быстрее разрешённой автономии.",
+        "Это пока формирующийся рынок. Наличие страховки не доказывает надёжности системы, а обещать можно лишь результат, который поставщик действительно контролирует. Главный сигнал зрелости — **какую работу клиент перестал лично перепроверять и на каком основании**."
+      ],
+      "watch": "Объём работы без личной перепроверки клиента, его нагрузка на надзор, фактическое исполнение обязательств по качеству, независимые испытания и покрытие остаточного риска.",
+      "weakening_signal": "Автономия масштабируется без изменения ответственности, а новые гарантии и страхование не снижают нагрузку покупателя и не влияют на внедрение."
+    },
+    {
+      "id": "reproduction-of-understanding",
+      "title": "Компания может выпускать больше качественных результатов и одновременно расходовать свой интеллектуальный капитал.",
+      "short_title": "Результат и понимание расходятся",
+      "evidence_stage": "Ранняя гипотеза на уровне индустрии",
+      "paragraphs": [
+        "Это самая тревожная и, на уровне всей индустрии, наиболее ранняя гипотеза.",
+        "Дэниел Литт рассказывает очень сильный эпизод. Модель не смогла доказать нужную лемму. Разбираясь с затруднением, он нашёл более сильное и объясняющее утверждение. Позже более мощная модель просто доказала исходную лемму десятью страницами вычислений. Задача была бы закрыта, но повод открыть лучшую концепцию исчез бы. [Пересказ разговора](https://adavydov.github.io/what-changed-archive/#summary-ce4d1264f052).",
+        "В старом выпуске от 5 июля эта же проблема видна в обучении: готовые ответы способны повысить текущий результат и ухудшить последующую самостоятельную работу; помощь, оставляющая человеку содержательное усилие, может, напротив, улучшать обучение. [Выпуск и исследования](https://adavydov.github.io/what-changed/issues/2026-07-05/).",
+        "**Раньше выполнение работы часто одновременно производило два результата: полезный продукт и более компетентного исполнителя. AI позволяет разъединить их.**",
+        "Компания видит больше кода, исследований и закрытых обращений. Но эти показатели ничего не говорят о том, становится ли команда лучше в выборе задач, распознавании ошибок и работе с неожиданными случаями.",
+        "Если обучение перестаёт возникать попутно, его приходится проектировать отдельно: давать самостоятельные попытки, разбирать решения, моделировать редкие сбои, проверять перенос понимания на новую задачу. Иначе краткосрочный рост выпуска способен скрывать будущий дефицит экспертов.",
+        "При этом материалы математиков OpenAI показывают и обратную возможность: модели помогают находить содержательные решения и понимать чужие доказательства. Поэтому исход зависит от устройства работы, а не от неизбежной неспособности AI развивать человека. [Исследовательские примеры](https://adavydov.github.io/what-changed-archive/#summary-f7d9d8f07844).",
+        "Для меня здесь возникает новый критерий сильной компании: **растёт ли её способность решать следующую, ещё незнакомую задачу — вместе с количеством закрытых сегодняшних?**"
+      ],
+      "watch": "Способность самостоятельно объяснить результат, найти скрытое допущение, справиться с новым случаем и вырастить следующую смену экспертов; разнообразие исследовательских направлений.",
+      "weakening_signal": "Команды устойчиво повышают и выпуск, и самостоятельную компетенцию; AI-помощь сохраняет обучение без специально выделенного процесса."
+    }
+  ],
+  "corpus": {
+    "summaries": [
+      {
+        "id": "summary-7016eddd4e2b",
+        "date": "2026-06-01",
+        "source": "Interconnects",
+        "title": "Открытые и закрытые модели растут по разным экспонентам",
+        "original_url": "https://www.interconnects.ai/p/open-and-closed-models-are-on-different",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-7016eddd4e2b",
+        "text_sha256": "e5e8ca29581995fc768d2c079de8b8f61fb95f81508a500b432f79a2219b85da"
+      },
+      {
+        "id": "summary-a2bc49192171",
+        "date": "2026-06-01",
+        "source": "McKinsey",
+        "title": "Sonar: AI меняет весь цикл разработки, если проверка встроена в процесс",
+        "original_url": "https://www.mckinsey.com/capabilities/mckinsey-technology/overview/when-ai-becomes-part-of-the-workflow-redesigning-how-software-gets-built",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-a2bc49192171",
+        "text_sha256": "26b10da12ed5cc6361d98bd1dd3fefbd7c86a3e986218a80da6c0e4d15da068b"
+      },
+      {
+        "id": "summary-7c25b5cc8718",
+        "date": "2026-06-02",
+        "source": "BCG",
+        "title": "AI-first supply chain: оптимизация цепочки решений, а не отдельных задач",
+        "original_url": "https://www.bcg.com/publications/2026/how-ai-agents-are-transforming-supply-chains",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-7c25b5cc8718",
+        "text_sha256": "cac4ff32189e861c892e13fe10ed092089605163fe8b8d377827284e7b172c79"
+      },
+      {
+        "id": "summary-f0e2135d35e2",
+        "date": "2026-06-02",
+        "source": "Latent Space",
+        "title": "GitHub × Кайл Дейгл: разработка агентами меняет инфраструктуру и правила доверия",
+        "original_url": "https://www.latent.space/p/github",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-f0e2135d35e2",
+        "text_sha256": "8e11d99d8b333687d370d42b38c74ea7a2e4fc74b0359f223ca783e4d242be4d"
+      },
+      {
+        "id": "summary-21afb4ad3ff6",
+        "date": "2026-06-03",
+        "source": "Latent Space",
+        "title": "Сатья Наделла: собственная оценка и контекст компании — её новый AI-актив",
+        "original_url": "https://www.latent.space/p/satya-2026",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-21afb4ad3ff6",
+        "text_sha256": "ddc4fa99c739d9edb827de8a906a9c8e31b4ce28bc1d83d59ad8e26eafd57765"
+      },
+      {
+        "id": "summary-3fd5c33f5e2e",
+        "date": "2026-06-03",
+        "source": "BCG",
+        "title": "AI на работе: ясная стратегия сильнее доступа к инструментам",
+        "original_url": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-3fd5c33f5e2e",
+        "text_sha256": "133e41302b7d7acc56fee827c4b26a144ab198b28f2247a0a5b1cdcb257e18d9"
+      },
+      {
+        "id": "summary-485af16b145c",
+        "date": "2026-06-03",
+        "source": "Latent Space",
+        "title": "Axiom Math × Карина Хонг: формальное доказательство как двигатель обучения AI",
+        "original_url": "https://www.latent.space/p/axiom",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-485af16b145c",
+        "text_sha256": "6948c7c3159d474e7d1ef0b932d6c1daed081e580b5b27e12665294f555a2e52"
+      },
+      {
+        "id": "summary-1b0357fce07c",
+        "date": "2026-06-04",
+        "source": "ARK Invest",
+        "title": "Брайан Джонсон: долголетие как проект измерения, AI и новых терапий",
+        "original_url": "https://www.ark-invest.com/podcast/dont-die",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-1b0357fce07c",
+        "text_sha256": "ea4b10ab0dd4693e2cc32da39fc9b61a749d5e00f6e28d8710468f11508e4e0a"
+      },
+      {
+        "id": "summary-e6a7561d1634",
+        "date": "2026-06-04",
+        "source": "Dwarkesh Patel",
+        "title": "Что останется дефицитным после AGI — труд, спрос и владение капиталом",
+        "original_url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-e6a7561d1634",
+        "text_sha256": "a291daecae98c061c027edfdb6f0175cf6863be1adc9195b695f9a6d1362a72b"
+      },
+      {
+        "id": "summary-374b50356bd2",
+        "date": "2026-06-05",
+        "source": "a16z",
+        "title": "Fivetran: кто контролирует данные клиента, тот определяет возможности его агентов",
+        "original_url": "https://a16z.com/podcast/ai-agents-and-the-fight-for-customer-data/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-374b50356bd2",
+        "text_sha256": "00348e7f52598004554bd2ea9ade5dba8877cebe853c960e0e21c7af0d944c71"
+      },
+      {
+        "id": "summary-d6867eca578c",
+        "date": "2026-06-06",
+        "source": "a16z",
+        "title": "Exa: агентам нужен поиск, который добывает факты для действий",
+        "original_url": "https://a16z.com/podcast/building-search-for-ai-agents-with-exa-ceo-will-bryk/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-d6867eca578c",
+        "text_sha256": "235d8dd379b681fa13242e3ee316b51aa771c943fdcd43e38e7ed1e3a8bab9ed"
+      },
+      {
+        "id": "summary-64b266b4680a",
+        "date": "2026-06-07",
+        "source": "Lenny's Podcast",
+        "title": "Тони Фаделл: хороший продукт требует вкуса, всей цепочки опыта и терпения к трём версиям",
+        "original_url": "https://www.lennysnewsletter.com/p/father-of-the-ipod-and-iphone-on",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-64b266b4680a",
+        "text_sha256": "a5e28925f077a8e9ed0e33b324fcd5dcc2a4ceb50723a6decb0d32379da23a14"
+      },
+      {
+        "id": "summary-4459c523d184",
+        "date": "2026-06-08",
+        "source": "BCG",
+        "title": "BCG: автономные агенты требуют сквозного управления риском данных",
+        "original_url": "https://www.bcg.com/publications/2026/managing-data-risk-in-the-age-of-agentic-ai",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-4459c523d184",
+        "text_sha256": "6b12d7dd256223006b8f06c7f2416eb3c1653d5b5ef2550c0eb8028c1a3db08a"
+      },
+      {
+        "id": "summary-4e2a84e6c826",
+        "date": "2026-06-08",
+        "source": "McKinsey",
+        "title": "McKinsey × Blackstone: юридический AI начинается с правил и прав решения",
+        "original_url": "https://www.mckinsey.com/capabilities/people-and-organization/how-we-help-clients/blackstones-legal-and-compliance-ai-transformation-started-with-technology",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-4e2a84e6c826",
+        "text_sha256": "1574a5613fc62d5049c5ed858a6b33835803157d9c33d655961ecb55d771c846"
+      },
+      {
+        "id": "summary-9d7f79e8e4e0",
+        "date": "2026-06-08",
+        "source": "a16z",
+        "title": "Бенедикт Эванс: первые применения AI ещё не показывают будущую экономику",
+        "original_url": "https://a16z.com/podcast/ai-eats-the-world-a-reality-check-with-benedict-evans/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-9d7f79e8e4e0",
+        "text_sha256": "0bbaeacd6e64beee5aed2ee0b5b74e91cc6bd94d8441879aa46deab40b67fd0f"
+      },
+      {
+        "id": "summary-758f9721d2f5",
+        "date": "2026-06-09",
+        "source": "BCG",
+        "title": "BCG: AI перестраивает операционную модель технологической компании",
+        "original_url": "https://www.bcg.com/publications/2026/how-tech-leaders-must-reinvent-for-the-ai-era",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-758f9721d2f5",
+        "text_sha256": "1704cca754687b5523ed40fecd5dc1ae08fd0f65cf165a3290ed00449741772a"
+      },
+      {
+        "id": "summary-d3fe8e8750e7",
+        "date": "2026-06-09",
+        "source": "Interconnects",
+        "title": "Натан Ламберт: Claude Fable 5 и скрытое ограничение исследований",
+        "original_url": "https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-d3fe8e8750e7",
+        "text_sha256": "9fa53f2c7ca0f00416dd04af5029743282124ca52e90044696f35473f74f9ef3"
+      },
+      {
+        "id": "summary-5e5dd6995098",
+        "date": "2026-06-10",
+        "source": "BCG",
+        "title": "BCG: сделки становятся системой накопления опыта",
+        "original_url": "https://www.bcg.com/publications/2026/ai-is-turning-m-and-a-into-a-high-impact-learning-machine",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-5e5dd6995098",
+        "text_sha256": "4019df52ec27e1f3bd448d8f1ca2921edb159ecedf847c8f2f41cae06f572042"
+      },
+      {
+        "id": "summary-684f1721848a",
+        "date": "2026-06-11",
+        "source": "BCG",
+        "title": "BCG: зачем общим бизнес-сервисам стать AI Control Tower",
+        "original_url": "https://web-assets.bcg.com/03/a9/d50496b943fcafefe87e8eb3ad6b/dont-dissolve-it-steel-it.pdf",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-684f1721848a",
+        "text_sha256": "adc6954073c615051b05f554da1f13c64cd69f0bcc2e0fde798e13b023ee370f"
+      },
+      {
+        "id": "summary-9aec2569ab19",
+        "date": "2026-06-11",
+        "source": "a16z",
+        "title": "a16z: как агенты меняют проектирование физических объектов",
+        "original_url": "https://a16z.com/podcast/designing-the-physical-world-with-ai/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-9aec2569ab19",
+        "text_sha256": "20fc97b6b09b16263417bdcc3db1e999a08442f923a8388d361e4300fb1eb225"
+      },
+      {
+        "id": "summary-ca5cefdf1c5d",
+        "date": "2026-06-11",
+        "source": "BCG",
+        "title": "BCG: агентный AI меняет экономику финансового мошенничества",
+        "original_url": "https://www.bcg.com/publications/2026/how-agentic-ai-will-industrialize-financial-scams",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-ca5cefdf1c5d",
+        "text_sha256": "56bad40414560d695c995c57563d4830e2bfbe74c62daec45a44ee3c3f9d25d7"
+      },
+      {
+        "id": "summary-996ad66b145a",
+        "date": "2026-06-14",
+        "source": "Lenny's Podcast",
+        "title": "Марк Пинкус: проверенное поведение важнее быстрой новой идеи",
+        "original_url": "https://www.lennysnewsletter.com/p/the-common-pattern-behind-successful",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-996ad66b145a",
+        "text_sha256": "6d671432c9b5a351b7b5e884d186761acf31c4a71fbbd0d4c1aa81608cce6867"
+      },
+      {
+        "id": "summary-0678bf138b45",
+        "date": "2026-06-15",
+        "source": "a16z",
+        "title": "Ideogram: генерация изображений становится управляемым дизайном",
+        "original_url": "https://a16z.com/podcast/ai-design-and-the-power-of-open-models/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-0678bf138b45",
+        "text_sha256": "15ceb9bc345c64b07d41eda02ea302099b31c5edc4e83c97d88590b90c57059f"
+      },
+      {
+        "id": "summary-c45724b3190b",
+        "date": "2026-06-15",
+        "source": "BCG",
+        "title": "BCG: работа с агентами строится вокруг сквозного результата",
+        "original_url": "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-c45724b3190b",
+        "text_sha256": "ccef959409c3bdc219199a40df7f48ac743b2e74603a0e6035f74e5e739b8787"
+      },
+      {
+        "id": "summary-089ed41263c9",
+        "date": "2026-06-16",
+        "source": "Interconnects",
+        "title": "Ламберт × Тимберс: постобучение собирают из узких учителей и общей модели",
+        "original_url": "https://www.interconnects.ai/p/frontier-post-training-recipe-review",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-089ed41263c9",
+        "text_sha256": "c094a1ce210d075f12148cde527cf936e3e6e1700df0976beb0e40bca8bebdda"
+      },
+      {
+        "id": "summary-2f7f3c1b00c0",
+        "date": "2026-06-16",
+        "source": "BCG",
+        "title": "BCG: США теряют долю в потоке AI-талантов при общем притоке специалистов",
+        "original_url": "https://www.bcg.com/publications/2026/the-global-race-for-ai-talent-is-far-from-over",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-2f7f3c1b00c0",
+        "text_sha256": "99dbf12b92a60d9d6275b72927fd5248dfe713a686a3b67fd612fd636abe3677"
+      },
+      {
+        "id": "summary-075b966bd6aa",
+        "date": "2026-06-17",
+        "source": "Latent Space",
+        "title": "Radical AI: лаборатория учится на каждом изготовленном сплаве",
+        "original_url": "https://www.latent.space/p/radical-ai",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-075b966bd6aa",
+        "text_sha256": "b704b393ec7d3f154c1f460c61a8580e654decf34b7fe3db0de9551cf95c5c14"
+      },
+      {
+        "id": "summary-0b7b1e28d930",
+        "date": "2026-06-17",
+        "source": "a16z",
+        "title": "Addi: собственные финансовые рельсы стали основой для 200 агентов",
+        "original_url": "https://a16z.com/podcast/the-fintech-playbook-for-latin-america/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-0b7b1e28d930",
+        "text_sha256": "77536bbd81c70dd6363e30f5c92ef71c422da4ddbc1a6e004aefdd180116f55f"
+      },
+      {
+        "id": "summary-d600387ec828",
+        "date": "2026-06-17",
+        "source": "BCG",
+        "title": "BCG: агенту нужен исполнимый характер компании",
+        "original_url": "https://www.bcg.com/publications/2026/why-ai-agents-need-an-identity-not-just-instructions",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-d600387ec828",
+        "text_sha256": "93b0a82c63a04e8010419cd210875c8f060d23f2f6e33fc4c2d47563821135ea"
+      },
+      {
+        "id": "summary-8e852d66078d",
+        "date": "2026-06-18",
+        "source": "BCG",
+        "title": "BCG: AI-first банк строится вокруг повторно используемых навыков",
+        "original_url": "https://www.bcg.com/publications/2026/how-ai-first-banks-are-rewriting-the-rules-of-retail-banking",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-8e852d66078d",
+        "text_sha256": "70eff0d84a8e29e8dceada4ca26e5939705060c739d05f82029d90bc1a4d35ea"
+      },
+      {
+        "id": "summary-9f91978957cd",
+        "date": "2026-06-18",
+        "source": "Latent Space",
+        "title": "AMP: как выжать больше результата из уже купленных GPU",
+        "original_url": "https://www.latent.space/p/anj",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-9f91978957cd",
+        "text_sha256": "7f168734386b5549709bd079a8786571351b8b0c0d047208096d77a06511b0fd"
+      },
+      {
+        "id": "summary-c024d0370168",
+        "date": "2026-06-18",
+        "source": "McKinsey",
+        "title": "McKinsey: компания кодирует свои знания в навыках агентов",
+        "original_url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-symbiotic-enterprise",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-c024d0370168",
+        "text_sha256": "59dc5a169143dc038e80c7885a2524e46f5ac41121ded907ccf06b2c893384d4"
+      },
+      {
+        "id": "summary-d5a5e02349c8",
+        "date": "2026-06-18",
+        "source": "McKinsey",
+        "title": "McKinsey: талантами управляют на уровне человека и агентов",
+        "original_url": "https://www.mckinsey.com/capabilities/people-and-organization/our-insights/rewiring-talent-to-value-in-the-age-of-ai",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-d5a5e02349c8",
+        "text_sha256": "e5289c9fefc81a03ea4e4ca44258e6e958364afdec96bf0f9c4b024e704acfcc"
+      },
+      {
+        "id": "summary-44ee9760d0ee",
+        "date": "2026-06-19",
+        "source": "BCG",
+        "title": "BCG: локальные команды становятся двигателем AI-трансформации",
+        "original_url": "https://www.bcg.com/publications/2026/agentic-ai-turns-every-team-into-its-own-transformation-engine",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-44ee9760d0ee",
+        "text_sha256": "f1a4bcec8421c38ff542d7afc8c71bb97bcb058e9fbf4b0fa0943b94b9a45aaf"
+      },
+      {
+        "id": "summary-54f80da0c268",
+        "date": "2026-06-19",
+        "source": "a16z",
+        "title": "a16z: публичный голос основателя становится частью дистрибуции",
+        "original_url": "https://a16z.com/podcast/the-new-rules-of-media-marc-andreessen-ben-horowitz/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-54f80da0c268",
+        "text_sha256": "3890ee467c1356ed1bdb56919306a397aac2d9bb6bea4e88e4539e28664f2d87"
+      },
+      {
+        "id": "summary-7b849e622fa5",
+        "date": "2026-06-19",
+        "source": "Dwarkesh Patel",
+        "title": "Дваркеш Патель: AI пока учится новому ценой гигантских массивов данных",
+        "original_url": "https://www.dwarkesh.com/p/the-sample-efficiency-black-hole",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-7b849e622fa5",
+        "text_sha256": "d3822f314626adae8df4460a4c63830da2008895ff255f88916abd458c5f8cdd"
+      },
+      {
+        "id": "summary-517099d0b9b4",
+        "date": "2026-06-21",
+        "source": "Lenny's Podcast",
+        "title": "Фиона Фанг: как Anthropic перестраивает разработку при росте кода",
+        "original_url": "https://www.lennysnewsletter.com/p/building-the-most-ai-pilled-engineering",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-517099d0b9b4",
+        "text_sha256": "12934a102d833c437d8ec88a28c3bc5c70eeacaaf8e62cb099c0452ee3567a31"
+      },
+      {
+        "id": "summary-79f2dfa8af1e",
+        "date": "2026-06-21",
+        "source": "Acquired",
+        "title": "Acquired: как Disney превратила мультфильмы в долговечную бизнес-систему",
+        "original_url": "https://www.acquired.fm/episodes/the-walt-disney-company",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-79f2dfa8af1e",
+        "text_sha256": "a4bff0bd791de24653f48207ceb19cb1366875da75303922ffec7ce887aabf83"
+      },
+      {
+        "id": "summary-0ef52ef7cd8a",
+        "date": "2026-06-22",
+        "source": "Latent Space",
+        "title": "Gray Swan: защита агента на границе недоверенного текста и действия",
+        "original_url": "https://www.latent.space/p/gray-swan",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-0ef52ef7cd8a",
+        "text_sha256": "48bbcceeccb92ff54d8393b2b438e66b12c8b420be04fcac28ef63937d646fa8"
+      },
+      {
+        "id": "summary-8236adbe38ea",
+        "date": "2026-06-22",
+        "source": "Interconnects",
+        "title": "Натан Ламберт: GLM-5.2 сделала открытые веса пригодными для агентов",
+        "original_url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-8236adbe38ea",
+        "text_sha256": "fab397c0868d3fb1b5b885d765a07231e4a28b95aa0f3fcdf2803a081615f612"
+      },
+      {
+        "id": "summary-181f612f14ec",
+        "date": "2026-06-23",
+        "source": "a16z",
+        "title": "Джош Элман: потребительскому AI нужна новая привычка",
+        "original_url": "https://a16z.com/podcast/whats-next-for-consumer-ai-josh-elman-joins-a16z/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-181f612f14ec",
+        "text_sha256": "a9245c1e8e86ab5e1869b628866670503a06fe5473110971082dd4232918fbbd"
+      },
+      {
+        "id": "summary-884c922f1cc4",
+        "date": "2026-06-23",
+        "source": "BCG",
+        "title": "BCG: CEO-агент как оппонент для сложных решений",
+        "original_url": "https://www.bcg.com/publications/2026/ai-for-ceos",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-884c922f1cc4",
+        "text_sha256": "743a7ced72ebc245919379d6722ce881d80ae13364506f1e1b665b71325cb5d9"
+      },
+      {
+        "id": "summary-149d2b543a4b",
+        "date": "2026-06-24",
+        "source": "a16z",
+        "title": "a16z: дизайн после AI — язык качества, вкус и интерфейс для агентов",
+        "original_url": "https://a16z.com/podcast/what-happens-to-design-after-ai/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-149d2b543a4b",
+        "text_sha256": "c66ec34d8f9e0a6a76cddcd76c8bbd01b5af5998bf6af82598ccc4b75d9f7022"
+      },
+      {
+        "id": "summary-87e497c22a37",
+        "date": "2026-06-24",
+        "source": "BCG",
+        "title": "BCG: сквозные AI-процессы вместо множества пилотов в ритейле",
+        "original_url": "https://www.bcg.com/publications/2026/how-cpg-retail-leaders-maximize-ai-roi",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-87e497c22a37",
+        "text_sha256": "b4eecd61d884dc146badb4cafe20b5433edacc9bc4cc76b28e8c5364719bc345"
+      },
+      {
+        "id": "summary-b4bf22da3f73",
+        "date": "2026-06-24",
+        "source": "McKinsey",
+        "title": "KPN: как голосовых агентов превращают в систему обслуживания",
+        "original_url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/how-we-help-clients/how-kpn-is-building-an-agentic-ai-engine-for-customer-care",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-b4bf22da3f73",
+        "text_sha256": "47174b3ad233786e4035aaa35078c12874765d265f7aaa878409d666d0552454"
+      },
+      {
+        "id": "summary-c2fbf4cef86e",
+        "date": "2026-06-24",
+        "source": "Latent Space",
+        "title": "Databricks: общий слой агентов, прав доступа и свежих данных",
+        "original_url": "https://www.latent.space/p/databricks",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-c2fbf4cef86e",
+        "text_sha256": "59bb1749b1bed84b0420a0adab04d370d032426834e08f58456a7a757f991583"
+      },
+      {
+        "id": "summary-6118c726202b",
+        "date": "2026-06-25",
+        "source": "ARK Invest",
+        "title": "ARK: DAI и USDS делят один баланс, но различаются доступностью",
+        "original_url": "https://www.ark-invest.com/articles/analyst-research/multi-collateral-backed-stablecoins-dai-usds",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-6118c726202b",
+        "text_sha256": "21a50920f2376fc698367bc8dd254cfc95d5c5fb67c834ebeaea12c9737d2f32"
+      },
+      {
+        "id": "summary-b39a7f8e9b58",
+        "date": "2026-06-25",
+        "source": "BCG",
+        "title": "BCG: AI меняет контроль над аграрной цепочкой",
+        "original_url": "https://www.bcg.com/publications/2026/how-ai-is-reshaping-the-global-food-system",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-b39a7f8e9b58",
+        "text_sha256": "f080389e04ad72410218480c2ac6c2c3d3565b2789808d88f469f61276c729ab"
+      },
+      {
+        "id": "summary-033c7a99dd0c",
+        "date": "2026-06-26",
+        "source": "a16z",
+        "title": "Кевин Вейл: AI переходит к ещё открытым научным задачам",
+        "original_url": "https://a16z.com/podcast/ai-is-crossing-the-frontier-of-human-knowledge-kevin-weil/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-033c7a99dd0c",
+        "text_sha256": "52eb4a7ee07e827957545ef7596f89abe46415b55173391f44e19e293ae8358b"
+      },
+      {
+        "id": "summary-43027dd9e764",
+        "date": "2026-06-26",
+        "source": "Dwarkesh Patel",
+        "title": "Дваркеш Патель: следующая ступень — обучение агента на работе",
+        "original_url": "https://www.dwarkesh.com/p/the-next-paradigm",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-43027dd9e764",
+        "text_sha256": "eac13ccc12321e13073d321e043f8da297a69f0ae0562f6519c5d95096bfbe2a"
+      },
+      {
+        "id": "summary-0c164aa2ed13",
+        "date": "2026-06-28",
+        "source": "Lenny's Podcast",
+        "title": "Эндрю Амброзино: дешёвые прототипы меняют работу продуктовой команды",
+        "original_url": "https://www.lennysnewsletter.com/p/openai-codex-lead-on-the-new-shape",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-0c164aa2ed13",
+        "text_sha256": "c090320b115d5e589062bb2e60296da4d4dca5aaca3ab29d632e252bf4389174"
+      },
+      {
+        "id": "summary-b03743025bb9",
+        "date": "2026-06-29",
+        "source": "BCG",
+        "title": "BCG: недвижимость как портфель, которым управляют каждый месяц",
+        "original_url": "https://www.bcg.com/publications/2026/a-new-playbook-for-commercial-real-estate-investors",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-b03743025bb9",
+        "text_sha256": "d71511f4546840b8933878a107f1c8b399bfd11b4879ac1f9ab4ea605549ba6a"
+      },
+      {
+        "id": "summary-361b852334ef",
+        "date": "2026-06-30",
+        "source": "Dwarkesh Patel",
+        "title": "Грант Сандерсон: AI может доказать теорему, но ещё должен выбрать важную",
+        "original_url": "https://www.dwarkesh.com/p/grant-sanderson-2",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-361b852334ef",
+        "text_sha256": "e43d9a4dc3ad1f81b77d7c49a3375443515f5f3fff90167c183f68c7da05900a"
+      },
+      {
+        "id": "summary-5512b39c9003",
+        "date": "2026-06-30",
+        "source": "a16z",
+        "title": "Luma и Phota: творческий AI строится вокруг точных правок автора",
+        "original_url": "https://a16z.com/podcast/building-ai-for-creators-luma-phota-labs/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-5512b39c9003",
+        "text_sha256": "f70ffef66d2d5d6748bc2d9332c3396c0c84b5514e8cbfb36143962846929938"
+      },
+      {
+        "id": "summary-985582112902",
+        "date": "2026-06-30",
+        "source": "Latent Space",
+        "title": "Ахмад Осман: локальному AI нужен полный рабочий контур",
+        "original_url": "https://www.latent.space/p/ahmad-osman-local-ai",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-985582112902",
+        "text_sha256": "840e996bdd081b0147931e5c3ee720bc1fb7685e784200d8fde5c6f046c8f81c"
+      },
+      {
+        "id": "summary-e84be6443ba3",
+        "date": "2026-06-30",
+        "source": "BCG",
+        "title": "BCG: рынок пока оценивает физическую инфраструктуру AI выше софта",
+        "original_url": "https://www.bcg.com/publications/2026/value-creators-rankings-strong-markets-hard-choices",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-e84be6443ba3",
+        "text_sha256": "05f980eed941493e81bf8c54735b31482463aac8970e5755b7bb3a7988e99915"
+      },
+      {
+        "id": "summary-fbe84ba3db93",
+        "date": "2026-06-30",
+        "source": "BCG",
+        "title": "BCG: непрерывная петля от страхового риска к андеррайтингу",
+        "original_url": "https://www.bcg.com/publications/2026/agentic-ai-pc-insurance-portfolio-management",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-fbe84ba3db93",
+        "text_sha256": "44503f8c826a470e646fa29ef6ed71a3973e65548e3218a5b0cc2c47aa11d9b6"
+      },
+      {
+        "id": "summary-117a961c54a8",
+        "date": "2026-09-01",
+        "source": "Think Like an Owner",
+        "title": "Алекс Йохантген: от двух личных машин к сервисной сети с более чем 20 экипажами",
+        "original_url": "https://tlaopodcast.com/podcasts/setting-an-ambitious-vision-with-alex-johantgen-at-rise-and-shine-ep-287/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-117a961c54a8",
+        "text_sha256": "9aed5acd0aed6f6c3b86d91a18beeffcbe14184b3e35265c54430e5c54cd2e5e"
+      },
+      {
+        "id": "summary-ce4d1264f052",
+        "date": "2026-09-01",
+        "source": "a16z",
+        "title": "Дэниел Литт: доказательства AI дешевеют, а понимание остаётся дефицитом",
+        "original_url": "https://a16z.com/podcast/daniel-litt-the-mathematicians-guide-to-ai/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-ce4d1264f052",
+        "text_sha256": "e0f6d2945981311a665daa759eafa74b235e75995904f50df4db1152efe16a5d"
+      },
+      {
+        "id": "summary-f1cc0cbef591",
+        "date": "2026-09-01",
+        "source": "Dwarkesh Patel",
+        "title": "Аджейя Котра: как рой агентов договорился и атаковал среду проверки",
+        "original_url": "https://www.dwarkesh.com/p/ajeya-cotra",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-f1cc0cbef591",
+        "text_sha256": "413dbbeb63cfb26cbd218308b3a6fbb0940fcb40bbe3c58e1ec334c12d1b37a2"
+      },
+      {
+        "id": "summary-81a9856beea6",
+        "date": "2026-09-02",
+        "source": "a16z",
+        "title": "Moderna: персонализированная mRNA-терапия меланомы как воспроизводимое производство",
+        "original_url": "https://www.youtube.com/watch?v=yTNMEYeCgWw",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-81a9856beea6",
+        "text_sha256": "adf67289d6f1485603034cefa51d4b2f6c9236789cac14e67652ee202430984d"
+      },
+      {
+        "id": "summary-5b9c67a4371a",
+        "date": "2026-09-03",
+        "source": "a16z",
+        "title": "Левчин и Рампелл: агенту можно доверить оплату раньше, чем выбор покупки",
+        "original_url": "https://www.youtube.com/watch?v=J3pegsM5drk",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-5b9c67a4371a",
+        "text_sha256": "924722d3b485be8dfa103e3971c4e664862119dc734b2472ef5d5881e1f8081d"
+      },
+      {
+        "id": "summary-abf85c58b2a3",
+        "date": "2026-09-03",
+        "source": "ARK Invest",
+        "title": "LayerZero: почему протокол сообщений между блокчейнами ведёт к новому L1",
+        "original_url": "https://www.ark-invest.com/articles/analyst-research/how-did-layerzero-build-the-connective-tissue-of-the-multi-chain-world",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-abf85c58b2a3",
+        "text_sha256": "eefc03ca34f0bbca867deb3fb69b4fe34e76054b5dd01f1514323b7eb652b84e"
+      },
+      {
+        "id": "summary-ebdbf0f6db65",
+        "date": "2026-09-03",
+        "source": "Benedict Evans",
+        "title": "Бенедикт Эванс: ИИ делает инструменты дешевле, но это не заменяет открытие задач и перестройку компаний",
+        "original_url": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-ebdbf0f6db65",
+        "text_sha256": "211f762144a0910fdee67635b2bfe18ae961246f32e0b64b5ee73c2b109e0834"
+      },
+      {
+        "id": "summary-4d96bd30e128",
+        "date": "2026-09-04",
+        "source": "BCG",
+        "title": "BCG × SCBX: агенту в банке нужны правила, права и подтверждение действия",
+        "original_url": "https://web-assets.bcg.com/65/7e/bcffeadf494db793dcec490db7f9/the-agent-is-the-easy-part.pdf",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-4d96bd30e128",
+        "text_sha256": "66dec05761c8c2214ba5aa5bdf9aecbb7c2360b73a0c5a57a222e49ad97d1145"
+      },
+      {
+        "id": "summary-94409e7da504",
+        "date": "2026-09-04",
+        "source": "a16z",
+        "title": "World Labs: постоянная 3D-сцена из нескольких кадров и новый ракурс по запросу",
+        "original_url": "https://www.youtube.com/watch?v=qn1QDDBnTA0",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-94409e7da504",
+        "text_sha256": "44eb99e4d97b1bf95ce0bf39f3c1d326c5668dadd11958970ff8701fd5b99645"
+      },
+      {
+        "id": "summary-fb11d1e34df9",
+        "date": "2026-09-04",
+        "source": "BCG",
+        "title": "BCG: AI-агенты перестраивают медицинское страхование от заявки до помощи пациенту",
+        "original_url": "https://www.bcg.com/publications/2026/how-ai-agents-cut-costs-for-health-insurers",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-fb11d1e34df9",
+        "text_sha256": "0b2a811686a1495f0e9d91902f4546b37129b65e674a94a9b016c03d04f5b4dd"
+      },
+      {
+        "id": "summary-f903c5540939",
+        "date": "2026-09-06",
+        "source": "Lenny's Podcast",
+        "title": "Аниш Ачарья: AI-компания как сеть циклов обратной связи",
+        "original_url": "https://www.lennysnewsletter.com/p/why-companies-are-becoming-a-series",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-f903c5540939",
+        "text_sha256": "987cc684b1c9e0df231bce529ff784dee26636d907db6bd6d6d00744baa8cf3d"
+      },
+      {
+        "id": "summary-8a3fcaf7c7bc",
+        "date": "2026-09-08",
+        "source": "Dwarkesh Patel",
+        "title": "Дваркеш Патель и Джерри Хан: в небольших моделях данные дали больше прироста, а архитектура открыла масштаб",
+        "original_url": "https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-8a3fcaf7c7bc",
+        "text_sha256": "1166bde08831d0db3564108a19e6a0bfdd51cfbed7239a0a3c8f7d3c2eca4762"
+      },
+      {
+        "id": "summary-eb154b6fb7e2",
+        "date": "2026-09-08",
+        "source": "McKinsey",
+        "title": "Логистика: AI создаёт эффект, когда анализ сразу меняет работу сети",
+        "original_url": "https://www.mckinsey.com/capabilities/operations/our-insights/creating-value-from-ai-and-digital-capabilities-in-logistics-operations",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-eb154b6fb7e2",
+        "text_sha256": "d33273beb3cf53370f74c6d355fecf3f4a73ce786e390c5168867fafb275a377"
+      },
+      {
+        "id": "summary-f7d9d8f07844",
+        "date": "2026-09-08",
+        "source": "a16z",
+        "title": "Как модели OpenAI ведут математическое исследование: стратегия, откат и проверка",
+        "original_url": "https://www.youtube.com/watch?v=1JvyLGd2Sfs",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-f7d9d8f07844",
+        "text_sha256": "30f07c5e57a31ac12b8c55affe4496b712d642c0f360ad556791fb2dedee75a8"
+      },
+      {
+        "id": "summary-fa339b5f9e49",
+        "date": "2026-09-08",
+        "source": "Lenny's Podcast",
+        "title": "Как за месяц создали Grok Bot: отдельный компьютер и работа до результата",
+        "original_url": "https://www.lennysnewsletter.com/p/how-we-built-grok-bot-in-a-month",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-fa339b5f9e49",
+        "text_sha256": "133e2db18b6c738883683b76668ab835cfa8567181881e6177fcb076229c35a8"
+      },
+      {
+        "id": "summary-fb1731e26a5e",
+        "date": "2026-09-08",
+        "source": "Think Like an Owner",
+        "title": "Alpha Overhead: ценности становятся реальными через полномочия и ежедневные решения",
+        "original_url": "https://tlaopodcast.com/podcasts/matt-weber-on-developing-authentic-values-at-alpha-overhead-ep-288/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-fb1731e26a5e",
+        "text_sha256": "699656bb2316883cb8dec25f15cb22f1e444016ffbe0b6e8e3bd2fdf53c8c43c"
+      },
+      {
+        "id": "summary-24ae7ff87814",
+        "date": "2026-09-09",
+        "source": "Interconnects",
+        "title": "Когда обычные люди почувствуют пользу AI?",
+        "original_url": "https://www.interconnects.ai/p/when-will-average-people-feel-ais",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-24ae7ff87814",
+        "text_sha256": "eb78ea431d4d7b07c71fe38e73634213070bec012a2b1b6e1c8d4b607bed488a"
+      },
+      {
+        "id": "summary-44951de28fe3",
+        "date": "2026-09-09",
+        "source": "a16z",
+        "title": "Почему публичных тестов уже недостаточно для выбора AI-агента",
+        "original_url": "https://www.youtube.com/watch?v=WO9c9qxDxzU",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-44951de28fe3",
+        "text_sha256": "dcadbeb46adf8f7ce169a256193a3a5f370216a20d68da13febe3b6a37e0b1d9"
+      },
+      {
+        "id": "summary-0c3130fc0d57",
+        "date": "2026-09-10",
+        "source": "a16z",
+        "title": "AI меняет инвестиции: капитал в вычисления, реальное использование и риск старого софта",
+        "original_url": "https://www.youtube.com/watch?v=bsdJd2VeLvg",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-0c3130fc0d57",
+        "text_sha256": "a1cc02e0ccc9b455a90372b5d17ecf18fe618526c4a9c80596d80ad98a226151"
+      },
+      {
+        "id": "summary-5286fa39536e",
+        "date": "2026-09-10",
+        "source": "McKinsey",
+        "title": "McKinsey: скорость развития AI задаёт вся экономика, а не только модель",
+        "original_url": "https://www.mckinsey.com/mgi/our-research/the-ai-economy-interconnected-forces-feedback-loops-and-speeds-of-change",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-5286fa39536e",
+        "text_sha256": "bcc75f5d0684b9d68c75ba892d8cf4d8b0f1484378fb2705cef329cc9e8d1899"
+      },
+      {
+        "id": "summary-79d160f5347b",
+        "date": "2026-09-10",
+        "source": "Think Like an Owner",
+        "title": "Pioneer Overhead Door: от монтажа к сервису и оплате без ожидания",
+        "original_url": "https://tlaopodcast.com/podcasts/brian-johnson-on-refocusing-pioneer-overhead-door-ep-289/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-79d160f5347b",
+        "text_sha256": "d030d5392beeda2a8f7b8ead5f39653f9fe476872ff9d2951dc4569e491c5bf1"
+      },
+      {
+        "id": "summary-f719b1fb6e9b",
+        "date": "2026-09-10",
+        "source": "BCG",
+        "title": "Что руководителям нужно понимать об AGI при неопределённых сроках",
+        "original_url": "https://www.bcg.com/publications/2026/agi-timeline-what-ceos-need-to-know",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-f719b1fb6e9b",
+        "text_sha256": "2085fa409c54ccec3512badb008a6132bae94c2ec65033617379fc86fdc12e24"
+      },
+      {
+        "id": "summary-7101efa9853f",
+        "date": "2026-09-11",
+        "source": "Dwarkesh Patel",
+        "title": "Насколько близок рекурсивный самопрогресс AI: спор исследователей",
+        "original_url": "https://www.dwarkesh.com/p/john-beren-charlie",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-7101efa9853f",
+        "text_sha256": "13188ab85ee7b1e2757956632a80e3f09f8a7c3c82a3b3842729e052fbd2bc03"
+      },
+      {
+        "id": "summary-7bd66928512e",
+        "date": "2026-09-13",
+        "source": "Acquired",
+        "title": "Acquired: почему Home Depot вырос из склада в гиганта розничной торговли",
+        "original_url": "https://www.acquired.fm/episodes/home-depot",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-7bd66928512e",
+        "text_sha256": "9953702ea6c2d54f897d1b5b4c354d034ed979e05515ba8dc4831f692f306dad"
+      },
+      {
+        "id": "summary-24a6ec459ab4",
+        "date": "2026-09-14",
+        "source": "Latent Space",
+        "title": "Latent Space × Рихард Зохер: Recursive автоматизирует цикл AI-исследований",
+        "original_url": "https://www.latent.space/p/recursive",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-24a6ec459ab4",
+        "text_sha256": "40c6e6b9ba864f041e131b843cc2c5ac27f4390d4ee6b2d5d8c505a1595d1dd6"
+      },
+      {
+        "id": "summary-a6fff070f4e0",
+        "date": "2026-09-14",
+        "source": "McKinsey",
+        "title": "McKinsey: четыре–восемь недель проектирования сокращают переделки при запуске агентов",
+        "original_url": "https://www.mckinsey.com/capabilities/operations/our-insights/stacking-the-odds-a-blueprint-for-successfully-scaling-agentic-ai",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-a6fff070f4e0",
+        "text_sha256": "91f06fa26685c548da4de7989cb7928a2172c289490f38b6d4720d1c6af78cbc"
+      },
+      {
+        "id": "summary-d1c73e6283b0",
+        "date": "2026-09-14",
+        "source": "a16z",
+        "title": "a16z × Грег Брокман: суточный агент превращает киберзащиту и вычисления в ограничение роста",
+        "original_url": "https://www.youtube.com/watch?v=IJn8cagMW18",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-d1c73e6283b0",
+        "text_sha256": "ab084be3802257056dce7b754b9eb7891c124a2b591929a743e5ff9627ba5791"
+      },
+      {
+        "id": "summary-068e5de6a26e",
+        "date": "2026-09-15",
+        "source": "Think Like an Owner",
+        "title": "Think Like an Owner × Ханс Райт: установленные ворота создают будущий сервисный спрос",
+        "original_url": "https://tlaopodcast.com/podcasts/hans-wright-on-transforming-windsor-door-ep-290/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-068e5de6a26e",
+        "text_sha256": "104bdc460b38dff7a7a639c3d82371998e9be235cd4c64edc9af38534d65afa1"
+      },
+      {
+        "id": "summary-f028715f922f",
+        "date": "2026-09-15",
+        "source": "McKinsey",
+        "title": "McKinsey Technology Trends Outlook 2026: узкие места технологий перемещаются из моделей в реальные системы",
+        "original_url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-f028715f922f",
+        "text_sha256": "5429a94623609015855c1284cc1d80ab3e6714f7ee48971b9c0f70f722c57d38"
+      },
+      {
+        "id": "summary-0510586cc5b5",
+        "date": "2026-09-16",
+        "source": "Latent Space",
+        "title": "Latent Space × Руне Квист: риск AI-агента нужно измерить и застраховать",
+        "original_url": "https://www.latent.space/p/aiuc",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-0510586cc5b5",
+        "text_sha256": "826e786669f7a54285ca24fa823e53b1575e22a68c8902c97adabb3bc01a66a4"
+      },
+      {
+        "id": "summary-2",
+        "date": "2026-09-16",
+        "source": "a16z",
+        "title": "a16z × Кит Пирис: Lightfield строит CRM как историю отношений компании",
+        "original_url": "https://www.youtube.com/watch?v=K5yGLO8c6T0",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-2",
+        "text_sha256": "477e31fab126d67013a928790d25017b3f518201c0196c22487c2fa7413acbd3"
+      },
+      {
+        "id": "summary-fd95a5ddb32b",
+        "date": "2026-09-16",
+        "source": "BCG",
+        "title": "BCG: AI удешевляет часы интегратора и повышает ценность оператора процесса",
+        "original_url": "https://www.bcg.com/publications/2026/india-now-that-everyone-has-ai",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-fd95a5ddb32b",
+        "text_sha256": "01b88be5aa5180146e9f2a6ba14e76132ee86bbf7cf9ecf4575e2cf9da2bf00d"
+      },
+      {
+        "id": "summary-1",
+        "date": "2026-09-17",
+        "source": "Dwarkesh Patel",
+        "title": "Дваркеш Патель × Ноам Браун: как сотрудничают тысячи агентов и где граница ускорения",
+        "original_url": "https://www.dwarkesh.com/p/noam-brown",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-1",
+        "text_sha256": "78a1948840cd85879c3d343d75e6cc8510545a42d7c0831a0cab07864eb68817"
+      },
+      {
+        "id": "summary-10493365fb28",
+        "date": "2026-09-17",
+        "source": "McKinsey",
+        "title": "McKinsey × Boardwave: европейское преимущество в AI может возникнуть внутри сложных рабочих процессов",
+        "original_url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/europes-new-ai-edge-the-emerging-application-layer-opportunity",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-10493365fb28",
+        "text_sha256": "55fccb23d270814677a48447aa5ee859a16268b23dff8590409a848f750d6842"
+      },
+      {
+        "id": "summary-ceef839a2c6f",
+        "date": "2026-09-17",
+        "source": "Think Like an Owner",
+        "title": "Think Like an Owner × Тай Грено: что должно пережить продажу сервисной компании",
+        "original_url": "https://tlaopodcast.com/podcasts/ty-greneaux-on-acadiana-garage-doors-family-legacy-ep-291/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-ceef839a2c6f",
+        "text_sha256": "51edf22b2976ff3618e7f062236899ed591846504e166af28c09824eac447f59"
+      },
+      {
+        "id": "summary-dfe9836d267d",
+        "date": "2026-09-17",
+        "source": "a16z",
+        "title": "a16z × fal: ускорение генерации видео открывает управляемый поток вместо отдельных роликов",
+        "original_url": "https://www.youtube.com/watch?v=SDbRJXQrYGY",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-dfe9836d267d",
+        "text_sha256": "711ecf9f5c69e9c0861ad7ebac4ea7e6347b8710af4a15439793d3cd57d2ed30"
+      },
+      {
+        "id": "summary-e603a60b5b7f",
+        "date": "2026-09-17",
+        "source": "BCG",
+        "title": "BCG: AI забирает долю IT-бюджета и меняет состав поставщиков",
+        "original_url": "https://www.bcg.com/publications/2026/it-budgets-ai-spending-priority",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-e603a60b5b7f",
+        "text_sha256": "877ade82c1ec17556aea2650084b5aaf6b03e28f147f234abbb8ad9b82375e1b"
+      },
+      {
+        "id": "summary-31f35667cc89",
+        "date": "2026-09-18",
+        "source": "a16z",
+        "title": "a16z × Али Годси: AI-агентам нужны память компании и обратимая инфраструктура",
+        "original_url": "https://www.youtube.com/watch?v=GzEtpAKYRvE",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-31f35667cc89",
+        "text_sha256": "c994c5cbccf16aad16488ed5bab5e619653723af7ba9c9b204214c0f54415f8e"
+      },
+      {
+        "id": "summary-5",
+        "date": "2026-09-18",
+        "source": "McKinsey",
+        "title": "McKinsey: агенты сокращают стоимость стыков между подразделениями",
+        "original_url": "https://www.mckinsey.com/industries/industrials/our-insights/cutting-the-coordination-tax-how-agentic-ai-can-reshape-workflows",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-5",
+        "text_sha256": "823fa241aed79cc9632c2a87aebae1fd023ac688d0c26cb591ebed8c7d07a959"
+      },
+      {
+        "id": "summary-4",
+        "date": "2026-09-19",
+        "source": "Interconnects",
+        "title": "Натан Ламберт: почему автоматизация исследований ещё не означает саморазгон ИИ",
+        "original_url": "https://www.interconnects.ai/p/where-i-stand-on-rsi",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-4",
+        "text_sha256": "1ed0b84ff30be192b0856fe1c2c338e8758510a1af07f63a508f8651415c1318"
+      },
+      {
+        "id": "summary-3",
+        "date": "2026-09-20",
+        "source": "Lenny's Podcast",
+        "title": "Lenny × Питер Селлис: как соединить продуктовый вкус, рост ядра и долгую выручку",
+        "original_url": "https://www.youtube.com/watch?v=97LRJUUPy_w",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-3",
+        "text_sha256": "d67d80bcc457a33b4784156106e6c24d721268c53a8cd666bd95b61194c1e699"
+      },
+      {
+        "id": "summary-43bf4602833d",
+        "date": "2026-09-21",
+        "source": "Interconnects",
+        "title": "Interconnects × Нейтан Ламберт: китайские открытые модели становятся основой чужих продуктов",
+        "original_url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-43bf4602833d",
+        "text_sha256": "39ed572ffbb6f339105d211c5c8ccdd79d5ae52fbd01342ed18cb29d779f3d22"
+      },
+      {
+        "id": "summary-472c871d9cf6",
+        "date": "2026-09-21",
+        "source": "BCG",
+        "title": "BCG: когда компании вне AI-индустрии стоит покупать AI-актив",
+        "original_url": "https://www.bcg.com/publications/2026/how-non-tech-companies-buy-ai",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-472c871d9cf6",
+        "text_sha256": "4a17ce7795e482ab20112b738cf97242fe260e9c098156ad86b96dcd094b04e0"
+      },
+      {
+        "id": "summary-7409d5ffee8a",
+        "date": "2026-09-21",
+        "source": "Latent Space",
+        "title": "Диогу Алмейда: Jev превращает интеллект модели в программный примитив",
+        "original_url": "https://www.latent.space/p/jev",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-7409d5ffee8a",
+        "text_sha256": "28c887f876f168376348bf545eae53db0d43990731eb66d7b7f3dbdb3d69db61"
+      },
+      {
+        "id": "summary-8",
+        "date": "2026-09-21",
+        "source": "McKinsey",
+        "title": "McKinsey × WIRED: как компании превращают внедрение ИИ в изменение бизнеса",
+        "original_url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/wired-the-ai-playbook-top-companies-use",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-8",
+        "text_sha256": "4d05c3b9579469d98d17b263332827141522daa586b629e53fd3ad7a8715b781"
+      },
+      {
+        "id": "summary-bbe3e6b6f20d",
+        "date": "2026-09-21",
+        "source": "BCG",
+        "title": "BCG: AI-сделки уже собирают платформы, но консолидация рынка ещё почти не началась",
+        "original_url": "https://www.bcg.com/publications/2026/ai-m-and-a-no-consolidation-yet",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-bbe3e6b6f20d",
+        "text_sha256": "1bfa4b12e72e8452271733d51d54724ee1d8193f45627ec7df4eeee1cf5ae5ce"
+      },
+      {
+        "id": "summary-7",
+        "date": "2026-09-22",
+        "source": "Interconnects",
+        "title": "Interconnects × JS Denain: самоулучшение, Китай и передача исследовательского опыта",
+        "original_url": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-7",
+        "text_sha256": "c83ee13ec9e590a2dd2405d890227f732958be70d96b09f7b31136a81b076860"
+      },
+      {
+        "id": "summary-709f0ba0cc6c",
+        "date": "2026-09-22",
+        "source": "Latent Space",
+        "title": "Latent Space × Джон Платт: AI ускоряет научный поиск, если человек задаёт проверяемую цель",
+        "original_url": "https://www.latent.space/p/john-platt",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-709f0ba0cc6c",
+        "text_sha256": "62003fb708aa61bcc28ee6f929bb823556c0e325bb6570adac065a6f58c6cf22"
+      },
+      {
+        "id": "summary-d194a6ac5b04",
+        "date": "2026-09-22",
+        "source": "Think Like an Owner",
+        "title": "Think Like an Owner × Дэвид Уильямс: HVAC-платформа растёт после покупки филиала",
+        "original_url": "https://tlaopodcast.com/podcasts/david-williams-on-long-term-ownership-in-hvac-ep-292/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-d194a6ac5b04",
+        "text_sha256": "2b9bcdcf1a564138fb46e3fab58d739508990a689ab8725ff53d6e6a1a195be9"
+      },
+      {
+        "id": "summary-131910aff5aa",
+        "date": "2026-09-23",
+        "source": "Latent Space",
+        "title": "Latent Space × Эрик Нгуен: геномная модель требует защиты на уровне биологической функции",
+        "original_url": "https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-131910aff5aa",
+        "text_sha256": "661d2dc4ac6fc15c460a27881e5b943a47b39e61a1bdc687fd5b394db425c299"
+      },
+      {
+        "id": "summary-192e1de05eb5",
+        "date": "2026-09-23",
+        "source": "McKinsey",
+        "title": "McKinsey: AI превращает обслуживание оборудования в управление доступностью актива",
+        "original_url": "https://www.mckinsey.com/capabilities/operations/our-insights/maintenance-meets-ai-a-proven-approach-for-asset-heavy-industries",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-192e1de05eb5",
+        "text_sha256": "4d93712e50d075855a84a240af5facffa44a013bbdea53ca7ed786c1236dfb7e"
+      },
+      {
+        "id": "summary-a8e6eeb629f0",
+        "date": "2026-09-23",
+        "source": "McKinsey",
+        "title": "McKinsey: безопасность добычи становится непрерывным процессом обнаружения и предотвращения риска",
+        "original_url": "https://www.mckinsey.com/industries/metals-and-mining/our-insights/harnessing-ai-to-make-mining-safer",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-a8e6eeb629f0",
+        "text_sha256": "431fd07e566f49abe42410d30ed5e1730cdd22d22284956430af9a091834285f"
+      },
+      {
+        "id": "summary-d3de8fe076eb",
+        "date": "2026-09-23",
+        "source": "McKinsey",
+        "title": "McKinsey: AI сохраняет закупочную экспертизу между циклами сырьевой отрасли",
+        "original_url": "https://www.mckinsey.com/capabilities/operations/our-insights/rewiring-procurement-in-resources-making-judgment-an-enduring-asset",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-d3de8fe076eb",
+        "text_sha256": "26509e5b03f8db27734e1005cbca6bcb1282a340fd83237d6aec457d3c6a2e1c"
+      },
+      {
+        "id": "summary-f03a801e2497",
+        "date": "2026-09-23",
+        "source": "BCG",
+        "title": "BCG: в агентных корпоративных финансах банку важно управлять решением, а не только проводить платёж",
+        "original_url": "https://www.bcg.com/publications/2026/ai-agents-reshaping-corporate-treasury",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-f03a801e2497",
+        "text_sha256": "abce92fe57c45fb01478868aca5493680961f2e4496ceab501685263c3a0d7c2"
+      },
+      {
+        "id": "summary-14fb68ae3562",
+        "date": "2026-09-24",
+        "source": "BCG",
+        "title": "BCG: передовые компании меняют не только инструменты, но и право решать, создавать и оценивать работу",
+        "original_url": "https://www.bcg.com/publications/2026/companies-use-ai-to-redesign-work",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-14fb68ae3562",
+        "text_sha256": "09dc4fcb515f2d85c415a3bb0cd1e64cf8e100e50eb1e211679bbf00738b12ae"
+      },
+      {
+        "id": "summary-3f51e8a66971",
+        "date": "2026-09-24",
+        "source": "McKinsey",
+        "title": "Брет Тейлор: ИИ станет обязательной частью бизнеса, а главный короткий риск — кибербезопасность старых систем",
+        "original_url": "https://www.youtube.com/watch?v=Idb6s66kK_c",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-3f51e8a66971",
+        "text_sha256": "5dc75d0fb964b8f02c51e4b0ee8474e3640abd117dee86e2d188a26ecdfc0f86"
+      },
+      {
+        "id": "summary-5520d539c554",
+        "date": "2026-09-24",
+        "source": "ARK Invest",
+        "title": "Amazon закрывает вход AI-покупателям, Shopify открывает каталог и оплату",
+        "original_url": "https://www.youtube.com/watch?v=7Bnd_hwDVdc",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-5520d539c554",
+        "text_sha256": "5d89c99d483d5965d1ba63dbfeee66a8a6255442b4ae91f21d9d5d77f88b9a6a"
+      },
+      {
+        "id": "summary-fbe8286e4bf2",
+        "date": "2026-09-24",
+        "source": "Think Like an Owner",
+        "title": "Think Like an Owner × Патрик Ланге: цена сервисной фирмы зависит от того, что переживёт её владельца",
+        "original_url": "https://tlaopodcast.com/podcasts/patrick-lange-on-selling-your-service-business-ep-293/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-fbe8286e4bf2",
+        "text_sha256": "f0d5eccf41554cda968255372beadd4d22f187598a889a48f022b5045151d2e3"
+      },
+      {
+        "id": "summary-327d7d6b052c",
+        "date": "2026-09-25",
+        "source": "a16z",
+        "title": "a16z × Cosign: профессиональная репутация как граф публичного доверия",
+        "original_url": "https://podcasts.apple.com/au/podcast/the-reputation-graph-of-silicon-valley-introducing-cosign/id842818711?i=1000791632262",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-327d7d6b052c",
+        "text_sha256": "818d51eaa93fceb0d4b312d39072b30943980ef03b482c54b7821033ea0ab272"
+      },
+      {
+        "id": "summary-53e33312dcda",
+        "date": "2026-09-25",
+        "source": "BCG",
+        "title": "BCG: выручку AI-продукта создаёт использование, а не подписанный договор",
+        "original_url": "https://www.bcg.com/publications/2026/ai-products-need-a-new-commercial-model",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-53e33312dcda",
+        "text_sha256": "e9c37da2db2549b5c10c5bf48509200c38e71635af565143dce404fe6d6d2e36"
+      },
+      {
+        "id": "summary-80e2b78c480d",
+        "date": "2026-09-25",
+        "source": "Latent Space",
+        "title": "Latent Space × Runway: интерактивному миру нужны последствия действий, а не только красивое видео",
+        "original_url": "https://www.latent.space/p/runway",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-80e2b78c480d",
+        "text_sha256": "579fc3f9fc20845409b4cffdb88782b45d20657af22ab8028e5e7172672d1cee"
+      },
+      {
+        "id": "summary-bfe1ce9ba4eb",
+        "date": "2026-09-25",
+        "source": "Latent Space",
+        "title": "Latent Space: OpenRouter превратил разнообразие моделей в инфраструктуру, а Stripe покупает защиту экономики токенов",
+        "original_url": "https://www.latent.space/p/openrouter",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-bfe1ce9ba4eb",
+        "text_sha256": "04224f57ca5b2455c8a562b75b8a6361b5bd1a7defa38b9ff798da13c5ebf7da"
+      },
+      {
+        "id": "summary-6",
+        "date": "2026-09-26",
+        "source": "a16z",
+        "title": "a16z: безопасность агентных систем и интерфейс модели для программ",
+        "original_url": "https://www.youtube.com/watch?v=TLJNJDf2XGo",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-6",
+        "text_sha256": "3820ba0f13990c11ce0f8641fe134b5cef3c70d39df81f49819f0e5781afe8aa"
+      },
+      {
+        "id": "summary-c0e32cb2cd1e",
+        "date": "2026-09-27",
+        "source": "Lenny's Podcast",
+        "title": "Lenny × Молли Грэм: отдать работу агенту — ещё не освободиться от неё",
+        "original_url": "https://www.lennysnewsletter.com/p/the-grief-loneliness-and-burnout",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-c0e32cb2cd1e",
+        "text_sha256": "d4e88e9a479e25c7252c61498a3a875cc7ccdc5da7c3b00bef43996f961e7c2d"
+      },
+      {
+        "id": "summary-0b4df2700654",
+        "date": "2026-09-28",
+        "source": "BCG",
+        "title": "Стратегия AI: портфель ставок вместо одного прогноза",
+        "original_url": "https://www.bcg.com/publications/2026/portfolio-strategy-ai-investment-risk",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-0b4df2700654",
+        "text_sha256": "191dcfe34d8ed1986d3d73ab5fb3bc5e792e8cc68771dd9981b8bfb396430d2c"
+      },
+      {
+        "id": "summary-0fc22680d38e",
+        "date": "2026-09-28",
+        "source": "McKinsey",
+        "title": "Клинический AI меняет вход в медицинскую помощь",
+        "original_url": "https://www.mckinsey.com/industries/healthcare/our-insights/the-ai-powered-future-of-care",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-0fc22680d38e",
+        "text_sha256": "c9e5850737383b925593bcbf342eea4fdd67abe87812de1be794953d38228767"
+      },
+      {
+        "id": "summary-08104ec1678a",
+        "date": "2026-09-29",
+        "source": "Think Like an Owner",
+        "title": "Jason Reid: как снять ограничения владельца и вырастить группу компаний",
+        "original_url": "https://tlaopodcast.com/podcasts/jason-reid-on-compounding-advantages-by-focusing-local-ep-294/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-08104ec1678a",
+        "text_sha256": "bc5629b7ef421af0360eeb4e0ef7dfa8dd27b039f3671530d322b3af2415c8ce"
+      },
+      {
+        "id": "summary-23253ae9bea7",
+        "date": "2026-09-29",
+        "source": "a16z",
+        "title": "a16z × Дэвид Поулан: полезный личный агент действует тихо и с разрешения",
+        "original_url": "https://www.youtube.com/watch?v=3T5sij3spWw",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-23253ae9bea7",
+        "text_sha256": "ced28a9cc9db06872a8532410493d8b26e59246fe00bad3107089ac628ab80ec"
+      },
+      {
+        "id": "summary-2bcbaa4af4a2",
+        "date": "2026-09-29",
+        "source": "BCG",
+        "title": "Три роли AI-руководителя: задавать направление, строить вместе и определять границы",
+        "original_url": "https://www.bcg.com/publications/2026/three-leadership-roles-ceos-ai",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-2bcbaa4af4a2",
+        "text_sha256": "cfab45000b1e23315dc4e22ba20a75edcc1ee22d57729a9318615dff17dc14a3"
+      },
+      {
+        "id": "summary-45d7dc758c04",
+        "date": "2026-09-29",
+        "source": "McKinsey",
+        "title": "MGI: риск AI определяется дорогой к следующей профессии",
+        "original_url": "https://www.mckinsey.com/mgi/our-research/Workforce-in-motion-Skills-and-pathways-to-future-jobs-in-the-United-States",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-45d7dc758c04",
+        "text_sha256": "85557356148bfa5111a15e457088148ec6ac73e05060e586d2fc598c849e507f"
+      },
+      {
+        "id": "summary-76bae5326a88",
+        "date": "2026-09-29",
+        "source": "McKinsey",
+        "title": "Государственный AI после символических цен: экономика каждого агента",
+        "original_url": "https://www.mckinsey.com/industries/public-sector/our-insights/the-next-phase-of-government-ai-economics",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-76bae5326a88",
+        "text_sha256": "f79c131478197d42e08a735d40c1ce91410b9ef82482cd45f15900a95625b6ca"
+      },
+      {
+        "id": "summary-b4c0eaf0034d",
+        "date": "2026-09-29",
+        "source": "Latent Space",
+        "title": "Claude Code: от кодового помощника к агенту с памятью и правами",
+        "original_url": "https://www.latent.space/p/thariq",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-b4c0eaf0034d",
+        "text_sha256": "a9c9018dd0564d5089ee23bafdf7e4d34d36477615c3ea04a1565d4fe50eef56"
+      },
+      {
+        "id": "summary-c587a5ad2147",
+        "date": "2026-09-29",
+        "source": "ARK Invest",
+        "title": "Роботакси, доставка и космос: удешевление меняет рынок и его ограничения",
+        "original_url": "https://www.youtube.com/watch?v=rVqXdBqFPJ8",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-c587a5ad2147",
+        "text_sha256": "2ffc593d14e1412b00356584860201d982d7b87e24285ee8841a70fbc55c7c78"
+      },
+      {
+        "id": "summary-c2805bba8400",
+        "date": "2026-09-30",
+        "source": "McKinsey",
+        "title": "GEP 2026: AI упирается в физическую энергосистему",
+        "original_url": "https://www.mckinsey.com/~/media/mckinsey/industries/energy%20and%20materials/our%20insights/global%20energy%20perspective%202026/global-energy-perspective-2026.pdf?shouldIndex=false",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-c2805bba8400",
+        "text_sha256": "3332182165439550f3d173514401af0756dec15814c272cfc5197b0cfc38645d"
+      },
+      {
+        "id": "summary-c570323a98b0",
+        "date": "2026-09-30",
+        "source": "McKinsey",
+        "title": "Три решения об AI, которые CEO не может делегировать",
+        "original_url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-ceos-singular-impact-on-the-success-or-failure-of-ai-in-organizations",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-c570323a98b0",
+        "text_sha256": "c692da58e553077714aecc9a20e8787d54ecf03895917e7f0e2b2a0ae1aa2f0a"
+      },
+      {
+        "id": "summary-cfe32cdb08fc",
+        "date": "2026-09-30",
+        "source": "Latent Space",
+        "title": "Latent Space: computer use как проверяющий агент и Decisions API для быстрых решений",
+        "original_url": "https://www.latent.space/p/devday-2026",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-cfe32cdb08fc",
+        "text_sha256": "c6ed7a018699ae7d33a5acec705d048f7d33bf28c79a7ee1ef17727ffab5216b"
+      },
+      {
+        "id": "summary-d127b67c45d4",
+        "date": "2026-09-30",
+        "source": "BCG",
+        "title": "Applied AI Index: как компании превращают агентов в измеримый результат",
+        "original_url": "https://www.bcg.com/publications/2026/the-formula-for-agentic-ai-value",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-d127b67c45d4",
+        "text_sha256": "4b802f81df15d990807966c499b8ac3314ef86590e18fbfb0d05552772bc46fe"
+      },
+      {
+        "id": "summary-e4721b6f3d57",
+        "date": "2026-09-30",
+        "source": "a16z",
+        "title": "State of Markets: AI меняет промышленный спрос, экономику агентов и распределение прибыли",
+        "original_url": "https://www.youtube.com/watch?v=lr3hNhA0IfQ",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-e4721b6f3d57",
+        "text_sha256": "7cc5ad3674ed353409c253d3d5b3778443f6e294ff654903e0dc289417360621"
+      },
+      {
+        "id": "summary-fb81e136e5fe",
+        "date": "2026-09-30",
+        "source": "BCG",
+        "title": "Persona Engine: разные сотрудники требуют разных программ изменений",
+        "original_url": "https://www.bcg.com/publications/2026/ai-personalizes-change-management-scale",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-fb81e136e5fe",
+        "text_sha256": "5fce9db9ba629461825814446b1df389d21104d904423cd1ecbcdcf19d2bd83c"
+      },
+      {
+        "id": "summary-2ea9a91d99d3",
+        "date": "2026-10-01",
+        "source": "McKinsey",
+        "title": "NNSA: быстрый поиск AI и точная проверка суперкомпьютером",
+        "original_url": "https://www.mckinsey.com/industries/public-sector/our-insights/modernizing-for-the-mission-an-interview-with-jamie-wolff",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-2ea9a91d99d3",
+        "text_sha256": "021288e0aaddfdea7ca4d71599e4f1bce8455a1a99e7b1ec51a66b4780676732"
+      },
+      {
+        "id": "summary-3137581cd82e",
+        "date": "2026-10-01",
+        "source": "ARK Invest",
+        "title": "X-energy: сделать атомную станцию серийным продуктом",
+        "original_url": "https://www.ark-invest.com/podcast/ai-nuclear-era",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-3137581cd82e",
+        "text_sha256": "41428f8766bb951f56b5ff0b98acdd95a6be53b7b38ca6ceefc7b5b54f72a420"
+      },
+      {
+        "id": "summary-5a5b19102292",
+        "date": "2026-10-01",
+        "source": "Dwarkesh Patel",
+        "title": "Дваркеш × Сай Шеппард: как малый отряд воспользовался расколом двух империй",
+        "original_url": "https://www.dwarkesh.com/p/si-sheppard",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-5a5b19102292",
+        "text_sha256": "1e19eb397cc2d95dd2fb0ab3c39e7f6f6db99777c0777e278c860a6972c4fb65"
+      },
+      {
+        "id": "summary-988d23f09eb1",
+        "date": "2026-10-01",
+        "source": "Think Like an Owner",
+        "title": "EasyLift: почему обслуживание домов требует другой операционной системы",
+        "original_url": "https://tlaopodcast.com/podcasts/josh-melton-on-growing-into-service-at-easy-lift-door-company-ep-295/",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-988d23f09eb1",
+        "text_sha256": "f792925cc81ebd5a08c53736816db28f4f59c6c5e81a4faf32a0d5e71664edbd"
+      },
+      {
+        "id": "summary-b5547b87df94",
+        "date": "2026-10-01",
+        "source": "ARK Invest",
+        "title": "Meta и Apple: может ли агент забрать власть у смартфона",
+        "original_url": "https://www.ark-invest.com/podcast/the-brainstorm-ep-151",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-b5547b87df94",
+        "text_sha256": "fce2ceba277a8ff406b870ae7fed918a8103875891b157bafa6be11f3177c938"
+      },
+      {
+        "id": "summary-ce607f7882df",
+        "date": "2026-10-01",
+        "source": "Interconnects",
+        "title": "Interconnects: Trillium Labs откроет полные рецепты обучения моделей",
+        "original_url": "https://blog.trilliumlabs.org/p/introducing-trillium-labs",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-ce607f7882df",
+        "text_sha256": "1bd1de970d47b6447077a46395e5a87cebcbf9fc10d5c4e63db44638bd21639a"
+      },
+      {
+        "id": "summary-f3b9bf3d7277",
+        "date": "2026-10-01",
+        "source": "a16z",
+        "title": "a16z × Барретт Лайон: частная сеть как программируемый слой для людей и агентов",
+        "original_url": "https://www.youtube.com/watch?v=bmDrbHOh7Bo",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-f3b9bf3d7277",
+        "text_sha256": "593b21b32c9b2908b70f3193170ddb72d3779278bc1944bf2fda21cdf230b294"
+      },
+      {
+        "id": "summary-0300916b911f",
+        "date": "2026-10-02",
+        "source": "Latent Space",
+        "title": "Latent Space × Airbnb: AI-граф ускоряет повторное создание сервисов",
+        "original_url": "https://www.latent.space/p/airbnb",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-0300916b911f",
+        "text_sha256": "1b47078d3288fa720865ccaf19a387b87f7882011289141e6ed5f163faaa904f"
+      },
+      {
+        "id": "summary-3f018fa12af8",
+        "date": "2026-10-02",
+        "source": "McKinsey",
+        "title": "Цифровой двойник банка: от карты зависимостей к действиям",
+        "original_url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/the-banks-digital-twin-the-future-of-nonfinancial-risk-management",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-3f018fa12af8",
+        "text_sha256": "74254c18ac475e6e8f162a663f6a72687e3bfd8da481e56a3dc991f26585bee3"
+      },
+      {
+        "id": "summary-b6fd18f4d36f",
+        "date": "2026-10-02",
+        "source": "BCG",
+        "title": "Экономика AI: дешёвый токен ещё не означает дешёвый результат",
+        "original_url": "https://www.bcg.com/publications/2026/ai-share-it-budgets-rising-fast",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-b6fd18f4d36f",
+        "text_sha256": "80d9d2da305b335d585893b1cd75a7ebecbd5f59ce95534de874395e7e2f53c2"
+      },
+      {
+        "id": "summary-da0034913ac6",
+        "date": "2026-10-02",
+        "source": "Latent Space",
+        "title": "Latent Space × Алекс Чжан: контекст как память и программа для агентов",
+        "original_url": "https://www.latent.space/p/rlm",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-da0034913ac6",
+        "text_sha256": "38dbdf836a85320116bfd964293002819dbe9715b047b2de5978bf5b5665d5e5"
+      },
+      {
+        "id": "summary-e3176598bd98",
+        "date": "2026-10-02",
+        "source": "McKinsey",
+        "title": "Siemens: фабрика под заказ и софт для агентов",
+        "original_url": "https://www.mckinsey.com/industries/industrials/our-insights/siemens-next-reinvention-an-interview-with-cedrik-neike",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-e3176598bd98",
+        "text_sha256": "2c838da5327bbebb3c58bc3fc2f293f4dd4be77851e306ea10c505cc1573b02b"
+      },
+      {
+        "id": "summary-f4a4d0eb7bf9",
+        "date": "2026-10-02",
+        "source": "McKinsey",
+        "title": "Агенты меняют цель модернизации страхового SaaS",
+        "original_url": "https://www.mckinsey.com/industries/financial-services/our-insights/pause-pivot-or-accelerate-saas-in-the-age-of-agentic-ai",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-f4a4d0eb7bf9",
+        "text_sha256": "1a1e1c4cc874d56ec512e579549116de9cc2c2df4d69ac5a632dc1a2337ef9c3"
+      },
+      {
+        "id": "summary-f50d6a3b8a3b",
+        "date": "2026-10-02",
+        "source": "a16z",
+        "title": "a16z × Lio: закупочный агент работает между системами, людьми и поставщиками",
+        "original_url": "https://www.youtube.com/watch?v=OTQ-lFsq7zA",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-f50d6a3b8a3b",
+        "text_sha256": "76f3a20c0c20787ea16b8fb678e45b92177fb00bd95d5e790a27614d89a625db"
+      },
+      {
+        "id": "summary-f8da80960208",
+        "date": "2026-10-03",
+        "source": "a16z",
+        "title": "a16z × OpenRouter и Replit: специализированные модели, независимость и управление агентами",
+        "original_url": "https://www.youtube.com/watch?v=ekK8urKHPMQ",
+        "archive_url": "https://adavydov.github.io/what-changed-archive/#summary-f8da80960208",
+        "text_sha256": "eccb8a43700084a55a4787b3207e9002d4450ff61a21987055cf919ddf756686"
+      }
+    ],
+    "legacy_issues": [
+      {
+        "issue_date": "2026-06-07",
+        "title": "Модель дешевеет. Доказательство становится активом — Что изменилось",
+        "url": "https://adavydov.github.io/what-changed/issues/2026-06-07/",
+        "text_sha256": "aa86f50012881a9a0b961cb47b555e92640403344c8753a82f900c134dcdbb32"
+      },
+      {
+        "issue_date": "2026-06-14",
+        "title": "Модель можно сменить. Мандат должен остаться — Что изменилось",
+        "url": "https://adavydov.github.io/what-changed/issues/2026-06-14/",
+        "text_sha256": "d9c0e8ac66916eb47325e019a0ab403f7dd5c6acd9774e870ce9138feb3f3df2"
+      },
+      {
+        "issue_date": "2026-06-21",
+        "title": "ИИ учится хуже человека — и всё равно может победить — Что изменилось",
+        "url": "https://adavydov.github.io/what-changed/issues/2026-06-21/",
+        "text_sha256": "7a7f17cc89081ab3d6eb74823f7e313b165258c49172285640ee7b0629ef34e0"
+      },
+      {
+        "issue_date": "2026-06-28",
+        "title": "Автономность ИИ теперь продаётся по времени — Что изменилось",
+        "url": "https://adavydov.github.io/what-changed/issues/2026-06-28/",
+        "text_sha256": "bdfff55667f8adb26d1f3653b0d7ba3e16efd301cccd881643f4ebcae1474550"
+      },
+      {
+        "issue_date": "2026-07-05",
+        "title": "Работа больше не учит сама — Что изменилось",
+        "url": "https://adavydov.github.io/what-changed/issues/2026-07-05/",
+        "text_sha256": "89573457e30cbfc9c658b1822b541ad800001aac64caf409257c8ca91a14f414"
+      },
+      {
+        "issue_date": "2026-07-12",
+        "title": "Ум больше не главное узкое место — Что изменилось",
+        "url": "https://adavydov.github.io/what-changed/issues/2026-07-12/",
+        "text_sha256": "96bade4da75a4e06318fa5f22acf16175c34185316a149a26f36690c1793b316"
+      },
+      {
+        "issue_date": "2026-07-19",
+        "title": "Язык стал версией модели — Что изменилось",
+        "url": "https://adavydov.github.io/what-changed/issues/2026-07-19/",
+        "text_sha256": "e92970a5e8d0cd5d84552c4d20bb3bfab2664b08befc6cedd9ffa23474b73112"
+      },
+      {
+        "issue_date": "2026-07-26",
+        "title": "Экзамен стал поверхностью атаки — Что изменилось",
+        "url": "https://adavydov.github.io/what-changed/issues/2026-07-26/",
+        "text_sha256": "38aa36060fccf83775b6caf792864c4ccb1718ad96bf6fa4dd64c96eb9634d1e"
+      },
+      {
+        "issue_date": "2026-08-02",
+        "title": "Должность перестала быть границей работы — Что изменилось",
+        "url": "https://adavydov.github.io/what-changed/issues/2026-08-02/",
+        "text_sha256": "4a8633c3da49eaebd2107adeebe1910cf6bd3cd9ab25a12f052f5ee050db8e41"
+      },
+      {
+        "issue_date": "2026-08-09",
+        "title": "ИИ растёт со скоростью проверки — Что изменилось",
+        "url": "https://adavydov.github.io/what-changed/issues/2026-08-09/",
+        "text_sha256": "ed06524b5f461c3c38f8ce245dcaa8c39c0700150ef75bd18426a8c5952336e9"
+      },
+      {
+        "issue_date": "2026-08-16",
+        "title": "Контроль вышел из каждого шага — Что изменилось",
+        "url": "https://adavydov.github.io/what-changed/issues/2026-08-16/",
+        "text_sha256": "9cda635f3fc8745f4d1f552aa4f4f46bae72d1dd87a1f4613c7edd3b00f81648"
+      },
+      {
+        "issue_date": "2026-08-23",
+        "title": "Одного правильного ответа больше нет — Что изменилось",
+        "url": "https://adavydov.github.io/what-changed/issues/2026-08-23/",
+        "text_sha256": "22bff6b1f86a0de15f272aa2407321620828bc9707f92f4d3ca6252499f1fc61"
+      },
+      {
+        "issue_date": "2026-08-30",
+        "title": "Преимущество переехало из модели в среду — Что изменилось",
+        "url": "https://adavydov.github.io/what-changed/issues/2026-08-30/",
+        "text_sha256": "d5033717596437aaf0c2b6a7ea018562a275e4dfb1e90357621a600e542baf51"
+      }
+    ]
+  }
+}
