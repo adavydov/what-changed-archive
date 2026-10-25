@@ -1,19 +1,109 @@
 <!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Короткие глубокие пересказы подкастов и статей о том, что меняется в ИИ, продуктах и работе компаний."><link rel="canonical" href="https://adavydov.github.io/what-changed-archive/"><title>Что изменилось — архив резюме</title><style>
-:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#20252c;background:#f5f6f7}*{box-sizing:border-box}body{margin:0}header,main,footer{max-width:860px;margin:auto;padding:0 24px}header{padding-top:48px;padding-bottom:28px}h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.04em;margin:.2em 0}.lead{font-size:1.1rem;color:#5d6672;line-height:1.5}h2{font-size:1.35rem;margin:44px 0 18px}.summary{background:white;border:1px solid #dfe3e8;border-radius:14px;padding:24px 28px;margin:0 0 18px;box-shadow:0 4px 16px #16243a08}.meta{font-size:.88rem;color:#647080;display:flex;gap:12px;flex-wrap:wrap}.source{background:#e7eefb;color:#183d79;border-radius:20px;padding:3px 9px}.summary h3{font-size:1.5rem;line-height:1.28;letter-spacing:-.025em;margin:16px 0}.summary p,.summary li{line-height:1.62}.summary li{margin:0 0 14px}.summary ul{padding-left:24px}.summary a{color:#1559ae;text-underline-offset:2px}footer{font-size:.85rem;color:#718092;padding-top:12px;padding-bottom:42px}@media(max-width:600px){.summary{padding:20px 18px}}
+:root {
+  --paper: #f7f5f2;
+  --ink: #1b1b1b;
+  --muted: #625d55;
+  --line: #dedbd5;
+  --soft: #eeece7;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  color-scheme: light;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 32px; }
+body { margin: 0; font-size: 20px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+header, main, footer { width: 100%; max-width: 1000px; margin-inline: auto; padding-inline: 48px; }
+header { padding-top: 80px; padding-bottom: 48px; }
+h1, h2, h3, h4, h5 { font-weight: 400; overflow-wrap: break-word; hyphens: auto; }
+h1 { margin: 0; font-size: clamp(48px, 6.25vw, 80px); line-height: 1.05; letter-spacing: -.045em; }
+.lead { max-width: 680px; margin: 28px 0 0; color: var(--muted); font-size: 22px; line-height: 1.5; }
+h2 { font-size: 36px; line-height: 1.15; letter-spacing: -.035em; margin: 72px 0 28px; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 4px; text-decoration-color: #aaa59b; transition: color .18s, text-decoration-color .18s; touch-action: manipulation; }
+a:hover { color: #44413d; text-decoration-color: currentColor; }
+a:focus-visible, select:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
+::selection { background: #d5d1c7; }
+strong { font-weight: 600; }
+.summary { background: #fff; border: 0; border-radius: 16px; padding: 44px 48px; margin: 0 0 32px; box-shadow: none; scroll-margin-top: 32px; }
+.meta { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 20px; color: var(--muted); font-size: 16px; line-height: 1.4; }
+.source { background: var(--soft); color: var(--muted); border-radius: 6px; padding: 5px 10px; }
+.summary h3 { margin: 28px 0 24px; font-size: 38px; line-height: 1.14; letter-spacing: -.035em; text-wrap: balance; }
+.summary p, .summary li { line-height: 1.6; overflow-wrap: break-word; }
+.summary p { margin: 22px 0; }
+.summary ul { padding-left: 24px; margin: 28px 0 0; }
+.summary li { margin: 0 0 22px; padding-left: 6px; }
+.summary li:last-child { margin-bottom: 0; }
+.summary a { color: inherit; }
+.coverage { margin: 0 0 40px; color: var(--muted); font-size: 18px; line-height: 1.6; scroll-margin-top: 32px; }
+.coverage strong { color: var(--ink); }
+footer { color: var(--muted); padding-top: 20px; padding-bottom: 56px; font-size: 16px; }
 
-.toc{background:#fff;border:1px solid #dfe3e8;border-radius:14px;padding:22px 28px;margin:0 0 32px}.toc-top{display:flex;justify-content:space-between;gap:16px;align-items:center}.toc h2{margin:0;font-size:1.3rem}.toc label{font-size:.88rem;color:#5d6672}#source-filter{display:block;width:220px;margin-top:5px;padding:8px;border:1px solid #cbd3dc;border-radius:8px;background:white;color:#20252c}.toc-week h3{font-size:1rem;margin:22px 0 10px}.toc ul{list-style:none;padding:0;margin:0}.toc li{border-top:1px solid #edf0f3}.toc li a{display:grid;grid-template-columns:54px 110px 1fr;gap:10px;align-items:baseline;padding:10px 0;color:#1559ae;text-decoration:none}.toc li a:hover{text-decoration:underline}.toc time,.toc-source{font-size:.82rem;color:#687689}.summary{scroll-margin-top:24px}.summary[hidden],.week[hidden],.toc li[hidden],.toc-week[hidden]{display:none}@media(max-width:600px){.toc{padding:18px}.toc-top{display:block}#source-filter{width:100%}.toc li a{grid-template-columns:52px 1fr}.toc li a span:last-child{grid-column:2}}
-/* Long articles retain the archive typography and allow wide tables to scroll. */
-.longform h4{font-size:1.22rem;line-height:1.4;margin:34px 0 14px}
-.longform h5{font-size:1.08rem;line-height:1.45;margin:26px 0 12px}
-.longform p{overflow-wrap:anywhere}
-.longform .related{padding:12px 16px;background:#f2f6fc;border-radius:8px}
-.longform .table-scroll{max-width:100%;overflow-x:auto;margin:20px 0;border:1px solid #dfe3e8;border-radius:8px}
-.longform .table-scroll:focus-visible{outline:2px solid #1559ae;outline-offset:3px}
-.longform table{width:100%;min-width:600px;border-collapse:collapse;font-size:.92rem;line-height:1.55}
-.longform th,.longform td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #dfe3e8}
-.longform th{background:#f2f6fc;font-weight:650}
-.longform tr:last-child td{border-bottom:0}
-.longform td:first-child{font-weight:600;width:26%}
+.toc { background: #fff; border: 0; border-radius: 16px; padding: 36px 40px 40px; margin: 0 0 48px; }
+.toc-top { display: flex; justify-content: space-between; gap: 32px; align-items: center; }
+.toc h2 { margin: 0; font-size: 32px; }
+.toc label { font-size: 16px; color: var(--muted); }
+#source-filter { display: block; width: 240px; max-width: 100%; min-height: 48px; margin-top: 8px; padding: 10px 12px; border: 1px solid #aaa59b; border-radius: 6px; background: var(--paper); color: var(--ink); font: inherit; cursor: pointer; }
+.toc-week h3 { margin: 36px 0 16px; font-size: 22px; line-height: 1.3; letter-spacing: -.02em; }
+.toc ul { list-style: none; padding: 0; margin: 0; }
+.toc li { border-top: 1px solid var(--line); }
+.toc li a { display: grid; grid-template-columns: 52px 110px minmax(0, 1fr); gap: 16px; align-items: baseline; padding: 16px 0; color: var(--ink); font-size: 18px; line-height: 1.45; text-decoration: none; }
+.toc li a:hover { text-decoration: underline; }
+.toc li a span { min-width: 0; overflow-wrap: break-word; }
+.toc time, .toc-source { color: var(--muted); font-size: 14px; line-height: 1.45; }
+.summary[hidden], .week[hidden], .toc li[hidden], .toc-week[hidden] { display: none; }
+
+/* The existing inline link to the snapshots keeps its markup and destination. */
+main > p[style] { padding: 28px 36px !important; margin-bottom: 32px !important; border: 0 !important; border-radius: 16px !important; font-size: 20px !important; }
+main > p[style] > a { color: var(--ink) !important; font-weight: 400 !important; }
+main > p[style] > span { color: var(--muted) !important; font-size: 17px; }
+
+.longform h4 { font-size: 28px; line-height: 1.25; letter-spacing: -.025em; margin: 40px 0 20px; }
+.longform h5 { font-size: 23px; line-height: 1.3; letter-spacing: -.02em; margin: 32px 0 16px; }
+.longform p { overflow-wrap: anywhere; }
+.longform .related { padding: 20px 24px; background: var(--paper); border-radius: 8px; }
+.longform .table-scroll { max-width: 100%; overflow-x: auto; margin: 28px 0; border: 1px solid var(--line); border-radius: 8px; }
+.longform table { width: 100%; min-width: 600px; border-collapse: collapse; font-size: 16px; line-height: 1.55; }
+.longform th, .longform td { text-align: left; vertical-align: top; padding: 16px; border-bottom: 1px solid var(--line); }
+.longform th { background: var(--paper); font-weight: 600; }
+.longform tr:last-child td { border-bottom: 0; }
+.longform td:first-child { font-weight: 600; width: 26%; }
+
+@media (max-width: 767px) {
+  body { font-size: 18px; }
+  header, main, footer { padding-inline: 20px; }
+  header { padding-top: 48px; padding-bottom: 36px; }
+  h1 { font-size: clamp(40px, 10.5vw, 60px); }
+  .lead { margin-top: 24px; font-size: 20px; }
+  h2 { font-size: 30px; margin: 56px 0 24px; }
+  .summary { padding: 28px 24px; border-radius: 12px; margin-bottom: 24px; }
+  .summary h3 { margin-top: 24px; font-size: 30px; line-height: 1.16; }
+  .summary ul { padding-left: 20px; }
+  .summary li { padding-left: 2px; }
+  .meta { font-size: 15px; gap: 10px 16px; }
+  .coverage { font-size: 17px; margin-bottom: 32px; }
+  .toc { padding: 28px 24px; border-radius: 12px; }
+  .toc-top { display: block; }
+  .toc h2 { font-size: 30px; margin-bottom: 24px; }
+  .toc label { display: block; }
+  #source-filter { width: 100%; }
+  .toc-week h3 { font-size: 20px; margin-top: 32px; }
+  .toc li a { grid-template-columns: 42px minmax(0, 1fr); gap: 6px 14px; font-size: 17px; }
+  .toc li a span:last-child { grid-column: 2; }
+  main > p[style] { padding: 24px !important; border-radius: 12px !important; }
+  .longform h4 { font-size: 25px; }
+  .longform h5 { font-size: 21px; }
+  .longform .related { padding: 16px; }
+  footer { font-size: 15px; padding-bottom: 40px; }
+}
+@media (max-width: 359px) {
+  .summary, .toc { padding-inline: 20px; }
+  .summary h3 { font-size: 27px; }
+  main > p[style] { padding-inline: 20px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; }
+}
 </style></head><body><header><h1>Что изменилось</h1><p class="lead">Архив отдельных резюме первоисточников. Материалы сгруппированы по неделям публикации; у каждого указаны дата, источник и оригинал.</p></header><main>
 <!-- SNAPSHOTS_LINK_START --><p style="margin:0 0 28px;padding:18px 22px;background:#fff;border:1px solid #dfe3e8;border-radius:14px;font-size:1rem;line-height:1.6"><a href="snapshots/" style="color:#1559ae;text-underline-offset:3px;font-weight:650">Срезы индустрии</a><br><span style="color:#5d6672">Пять сквозных гипотез · первый срез на 4 октября 2026</span></p><!-- SNAPSHOTS_LINK_END -->
 <!-- NAV_START -->
