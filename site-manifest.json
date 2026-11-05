@@ -778,10 +778,11 @@
     "weeks/2026-06-07/index.html": "9084bcdd578da692c2fa11d12c08abce8348187eba67e7ca85ff9d533220f756",
     "weeks/2026-04-12/index.html": "3247fec146ab98f67d05f3974199dfc49cba3fbfd8a28a7df2f39764ed0652ed",
     "months/2026-10/index.html": "b8bfe63f554c4b3991d4b858c334dbc581bbf62bc8cf86be4c25a6112f7a32d2",
+    "months/2026-09/index.html": "9a5c41e68f7cf097ed469be39381f745e2c613b67e266a63d09572799505d111",
     "months/2026-06/index.html": "b378e4cdea368b7826e3435d1ef2e171747cb95c4de116cd703d4dfcb2156fdd",
     "months/2026-07/index.html": "f8179f94b7fbdd8e7a6387399d7ab09335cedd1c691e4a863aa9a5b114644031",
     "months/2026-08/index.html": "1c7e042c5ba4aed23d27893ce64aa74a6dcb5cab1f76e5a6cf2f6958126a73d5",
-    "months/index.html": "0f97d81ae0fb3426262626a469eb56b8d7745a504f5607722edd23332cefd365",
+    "months/index.html": "613c25c078c5a8611316f5ae48065d6c0cf24fd1d1cf647a631a470dee70dc48",
     "snapshots/2026-10-04/index.html": "86425601be4bfeedba0fb1eddcb6a28842208a73600077fd529826e481aa62ba",
     "snapshots/2026-10-04/snapshot.json": "60150c495829cec26644fc81c6668d4fc39dad1daf00196b067322de0cc650e8",
     "snapshots/2026-08-31/index.html": "c65547cdfee463d9e2d321074103c4b05838b46468762ff624f7b526421351b1",
@@ -789,7 +790,7 @@
     "snapshots/index.html": "0575d401b1f01db571bba314a6027eaabe796b7eb6a06cdad7197b4fbddf94b4",
     "index.html": "71990aa4d0f4255705e04b13ac94eafb826102f2337cd9285b322e1139a67ba2",
     "assets/redirects.js": "0669d9b7bbe3c94810d4a9908aade7f2ff5abb8a76e0fd61afb70f9931ad4b8a",
-    "search.json": "504c2fe5b671d3cd0f6732c1c4ed3c6ee4f258f251b1e1e49cc2fbf6f630ce07"
+    "search.json": "baeada53fe67b132029bbce718d5dead108e1f17c43341d1076461a56827587c"
   },
   "records": 740,
   "weeks": 24,
